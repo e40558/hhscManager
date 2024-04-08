@@ -1,0 +1,94 @@
+{
+    "code": "EAI_AGAIN",
+    "errno": -3001,
+    "hostname": "postgres",
+    "level": "error",
+    "message": "Error during datasource initialization. getaddrinfo EAI_AGAIN postgres",
+    "stack": "Error: getaddrinfo EAI_AGAIN postgres\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)",
+    "syscall": "getaddrinfo"
+}
+{
+    "code": "28000",
+    "file": "auth.c",
+    "length": 161,
+    "level": "error",
+    "line": "545",
+    "message": "Error during datasource initialization. no pg_hba.conf entry for host \"172.59.192.187\", user \"admin\", database \"hhcsauthdb\", no encryption",
+    "name": "error",
+    "routine": "ClientAuthentication",
+    "severity": "FATAL",
+    "stack": "error: no pg_hba.conf entry for host \"172.59.192.187\", user \"admin\", database \"hhcsauthdb\", no encryption\n    at Parser.parseErrorMessage (/src/node_modules/pg-protocol/src/parser.ts:369:69)\n    at Parser.handlePacket (/src/node_modules/pg-protocol/src/parser.ts:188:21)\n    at Parser.parse (/src/node_modules/pg-protocol/src/parser.ts:103:30)\n    at Socket.<anonymous> (/src/node_modules/pg-protocol/src/index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)"
+}
+{
+    "address": "127.0.0.1",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "level": "error",
+    "message": "Error during datasource initialization. connect ECONNREFUSED 127.0.0.1:5432",
+    "port": 5432,
+    "stack": "Error: connect ECONNREFUSED 127.0.0.1:5432\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)",
+    "syscall": "connect"
+}
+{
+    "address": "127.0.0.1",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "level": "error",
+    "message": "Error during datasource initialization. connect ECONNREFUSED 127.0.0.1:5432",
+    "port": 5432,
+    "stack": "Error: connect ECONNREFUSED 127.0.0.1:5432\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)",
+    "syscall": "connect"
+}
+{
+    "address": "127.0.0.1",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "level": "error",
+    "message": "Error during datasource initialization. connect ECONNREFUSED 127.0.0.1:5432",
+    "port": 5432,
+    "stack": "Error: connect ECONNREFUSED 127.0.0.1:5432\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)",
+    "syscall": "connect"
+}
+{
+    "address": "127.0.0.1",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "level": "error",
+    "message": "Error during datasource initialization. connect ECONNREFUSED 127.0.0.1:5432",
+    "port": 5432,
+    "stack": "Error: connect ECONNREFUSED 127.0.0.1:5432\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)",
+    "syscall": "connect"
+}
+{
+    "address": "127.0.0.1",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "level": "error",
+    "message": "Error during datasource initialization. connect ECONNREFUSED 127.0.0.1:5432",
+    "port": 5432,
+    "stack": "Error: connect ECONNREFUSED 127.0.0.1:5432\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)",
+    "syscall": "connect"
+}
+{
+    "address": "127.0.0.1",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "level": "error",
+    "message": "Error during datasource initialization. connect ECONNREFUSED 127.0.0.1:5432",
+    "port": 5432,
+    "stack": "Error: connect ECONNREFUSED 127.0.0.1:5432\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)",
+    "syscall": "connect"
+}
+{
+    "level": "error",
+    "message": "Error during datasource initialization. The server does not support SSL connections",
+    "stack": "Error: The server does not support SSL connections\n    at Socket.<anonymous> (/src/node_modules/pg/lib/connection.js:77:37)\n    at Object.onceWrapper (node:events:628:26)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)"
+}
+{
+    "code": "ECONNRESET",
+    "errno": -104,
+    "level": "error",
+    "message": "Error during datasource initialization. read ECONNRESET",
+    "stack": "Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)",
+    "syscall": "read"
+}

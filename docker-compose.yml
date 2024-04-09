@@ -7,9 +7,8 @@ services:
       POSTGRES_USER: admin
       POSTGRES_DB: hhcsauthdb
     volumes:
-      - ./postgres-data:/var/lib/postgresq
-    ports:
-      - "5432:5432"
+      - ./postgres-data:/var/lib/postgresq   
+      
  nginx:
     depends_on:
       - api
@@ -19,7 +18,7 @@ services:
       dockerfile: Dockerfile.dev
       context: ./nginx
     ports:
-      - "3050:80"     
+      - "3050:8080"     
  api:
     image: postgresapi
     build:
@@ -28,17 +27,6 @@ services:
     volumes:
       - /src/node_modules
       - .:/src
-    ports:
-      - "13000:9000"
- pgadmin:
-    container_name: pgadmin4
-    image: dpage/pgadmin4
-    restart: always
-    environment:
-      PGADMIN_DEFAULT_EMAIL: admin@email.com
-      PGADMIN_DEFAULT_PASSWORD: root
-    ports:
-      - "5050:80" 
  client:
     stdin_open: true
     environment:

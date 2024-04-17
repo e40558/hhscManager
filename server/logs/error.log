@@ -92,3 +92,78 @@
     "stack": "Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)",
     "syscall": "read"
 }
+{
+    "code": "ENOTFOUND",
+    "errno": -3008,
+    "hostname": "db",
+    "level": "error",
+    "message": "Error during datasource initialization. getaddrinfo ENOTFOUND db",
+    "stack": "Error: getaddrinfo ENOTFOUND db\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)",
+    "syscall": "getaddrinfo"
+}
+{
+    "code": "ENOTFOUND",
+    "errno": -3008,
+    "hostname": "db",
+    "level": "error",
+    "message": "Error during datasource initialization. getaddrinfo ENOTFOUND db",
+    "stack": "Error: getaddrinfo ENOTFOUND db\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)",
+    "syscall": "getaddrinfo"
+}
+{
+    "code": "ENOTFOUND",
+    "errno": -3008,
+    "hostname": "db",
+    "level": "error",
+    "message": "Error during datasource initialization. getaddrinfo ENOTFOUND db",
+    "stack": "Error: getaddrinfo ENOTFOUND db\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)",
+    "syscall": "getaddrinfo"
+}
+{
+    "code": "ECONNREFUSED",
+    "level": "error",
+    "message": "Error during datasource initialization.",
+    "stack": "AggregateError\n    at internalConnectMultiple (node:net:1114:18)\n    at afterConnectMultiple (node:net:1667:5)"
+}
+{
+    "code": "ECONNREFUSED",
+    "level": "error",
+    "message": "Error during datasource initialization.",
+    "stack": "AggregateError\n    at internalConnectMultiple (node:net:1114:18)\n    at afterConnectMultiple (node:net:1667:5)"
+}
+{
+    "code": "ENOENT",
+    "errno": -4058,
+    "level": "error",
+    "message": "Error during datasource initialization. ENOENT: no such file or directory, open 'C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\cert\\key.pem'",
+    "path": "C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\cert\\key.pem",
+    "stack": "Error: ENOENT: no such file or directory, open 'C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\cert\\key.pem'\n    at Object.openSync (node:fs:581:18)\n    at Object.readFileSync (node:fs:457:35)\n    at startServer (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\server.ts:72:21)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\server.ts:86:9\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "syscall": "open"
+}
+{
+    "code": "ENOENT",
+    "errno": -4058,
+    "level": "error",
+    "message": "Error during datasource initialization. ENOENT: no such file or directory, open 'C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\ssl\\key.pem'",
+    "path": "C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\ssl\\key.pem",
+    "stack": "Error: ENOENT: no such file or directory, open 'C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\ssl\\key.pem'\n    at Object.openSync (node:fs:581:18)\n    at Object.readFileSync (node:fs:457:35)\n    at startServer (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\server.ts:72:21)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\server.ts:86:9\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "syscall": "open"
+}
+{
+    "code": "ENOENT",
+    "errno": -4058,
+    "level": "error",
+    "message": "Error during datasource initialization. ENOENT: no such file or directory, open 'C:\\Users\\tjmcc\\source\\hhcsManager\\server\\key.pem'",
+    "path": "C:\\Users\\tjmcc\\source\\hhcsManager\\server\\key.pem",
+    "stack": "Error: ENOENT: no such file or directory, open 'C:\\Users\\tjmcc\\source\\hhcsManager\\server\\key.pem'\n    at Object.openSync (node:fs:581:18)\n    at Object.readFileSync (node:fs:457:35)\n    at startServer (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\server.ts:72:21)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\server.ts:86:9\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "syscall": "open"
+}
+{
+    "code": "ENOENT",
+    "errno": -4058,
+    "level": "error",
+    "message": "Error during datasource initialization. ENOENT: no such file or directory, open 'C:\\Users\\tjmcc\\source\\hhcsManager\\server\\key.pem'",
+    "path": "C:\\Users\\tjmcc\\source\\hhcsManager\\server\\key.pem",
+    "stack": "Error: ENOENT: no such file or directory, open 'C:\\Users\\tjmcc\\source\\hhcsManager\\server\\key.pem'\n    at Object.openSync (node:fs:581:18)\n    at Object.readFileSync (node:fs:457:35)\n    at startServer (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\server.ts:72:21)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\server.ts:86:9\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "syscall": "open"
+}

@@ -17,7 +17,7 @@ export async function createUser(
 
         logger.debug(`Called createUser()`);
 
-        const {email, firstName, lastName,pictureUrl, password, isAdmin} = request.body;
+        const  {email, firstName, lastName,pictureUrl, password, isAdmin} = request.body;
 
         if (!email) {
             throw "Could not extract the email from the request, aborting.";
@@ -48,10 +48,10 @@ export async function createUser(
             email,
             firstName,
             lastName,
-            pictureUrl,
-            isAdmin,
-            passwordHash,
-            passwordSalt
+          //  pictureUrl,
+           // isAdmin,
+          //  passwordHash,
+         //   passwordSalt
         });
 
         await AppDataSource.manager.save(newUser);

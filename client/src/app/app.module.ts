@@ -1,18 +1,57 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './reducers';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { EffectsModule } from '@ngrx/effects';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AuthService } from './service/auth.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatMenuModule} from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule} from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule} from '@angular/material/button'
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    SignupComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    MatToolbarModule,
+    MatListModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatMenuModule,
+    MatIconModule,
+    HttpClientModule,
+    StoreModule.forRoot(reducers, {
+      metaReducers
+    }),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
+    EffectsModule.forRoot([]),
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ],
-  providers: [],
+  providers: [AuthService],
+              
   bootstrap: [AppComponent]
 })
 export class AppModule { }

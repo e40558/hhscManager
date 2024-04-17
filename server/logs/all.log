@@ -140,3 +140,114 @@
     "stack": "Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)",
     "syscall": "read"
 }
+{
+    "code": "ENOTFOUND",
+    "errno": -3008,
+    "hostname": "db",
+    "level": "error",
+    "message": "Error during datasource initialization. getaddrinfo ENOTFOUND db",
+    "stack": "Error: getaddrinfo ENOTFOUND db\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)",
+    "syscall": "getaddrinfo"
+}
+{
+    "code": "ENOTFOUND",
+    "errno": -3008,
+    "hostname": "db",
+    "level": "error",
+    "message": "Error during datasource initialization. getaddrinfo ENOTFOUND db",
+    "stack": "Error: getaddrinfo ENOTFOUND db\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)",
+    "syscall": "getaddrinfo"
+}
+{
+    "code": "ENOTFOUND",
+    "errno": -3008,
+    "hostname": "db",
+    "level": "error",
+    "message": "Error during datasource initialization. getaddrinfo ENOTFOUND db",
+    "stack": "Error: getaddrinfo ENOTFOUND db\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)",
+    "syscall": "getaddrinfo"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "HTTP REST API Server is now running at http://localhost:9000"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "HTTP REST API Server is now running at http://localhost:9000"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "HTTP REST API Server is now running at http://localhost:9000"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "HTTP REST API Server is now running at http://localhost:9000"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "HTTP REST API Server is now running at http://localhost:9000"
+}
+{
+    "code": "ECONNREFUSED",
+    "level": "error",
+    "message": "Error during datasource initialization.",
+    "stack": "AggregateError\n    at internalConnectMultiple (node:net:1114:18)\n    at afterConnectMultiple (node:net:1667:5)"
+}
+{
+    "code": "ECONNREFUSED",
+    "level": "error",
+    "message": "Error during datasource initialization.",
+    "stack": "AggregateError\n    at internalConnectMultiple (node:net:1114:18)\n    at afterConnectMultiple (node:net:1667:5)"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": "User test@gmail.com has been created."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}

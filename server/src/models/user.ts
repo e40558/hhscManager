@@ -19,17 +19,17 @@ export class User {
     @Column()
     lastName:string;
 
-    @Column()
-    passwordHash:string;
+  //  @Column()
+ //   passwordHash:string;
 
-    @Column()
-    passwordSalt:string;
+   // @Column()
+   // passwordSalt:string;
 
-    @Column()
-    pictureUrl:string;
+   // @Column()
+   // pictureUrl:string;
 
-    @Column()
-    isAdmin:boolean;
+    //@Column()
+    //isAdmin:boolean;
 
     @CreateDateColumn()
     createdAt: Date;

@@ -11,6 +11,9 @@ console.log(process.env.PORT);
 
 
 import * as express from 'express';
+import * as fs from 'fs';
+import * as path from 'path';
+import * as https from 'https';
 import { root } from "./routes/root";
 import { isInteger } from "./utils";
 import {logger} from "./logger";
@@ -21,17 +24,28 @@ import { createUser } from "./controller/create-user.route";
 const cors = require("cors");
 
 const bodyParser = require("body-parser");
+const commandLineArgs = require('command-line-args');
+
+
+
+
 
 const app = express();
+
+const corsOptions = {
+    origin: 'http://localhost:4200',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  }
 
 
 
 function setupExpress() {
-    app.use(cors({origin:true}));
+    app.use(cors(corsOptions));
     app.use(bodyParser.json());
     app.route("/").get(root);
     app.route(`/api/signup`).post(createUser)
 }
+
 
 function startServer() {
 
@@ -52,12 +66,15 @@ function startServer() {
         port = 9000;
     }
 
-    app.listen(port, () => {
+   
 
-        logger.info(`HTTP REST API Server is now running at http://localhost:${port}`);
-
-    });
-
+        const httpsServer = https.createServer({
+            key: fs.readFileSync('key.pem'),
+            cert: fs.readFileSync('cert.pem')
+        }, app);
+    
+        // launch an HTTPS Server. Note: this does NOT mean that the application is secure
+        httpsServer.listen(port, () => console.log("HTTPS Secure Server running at https://localhost:" + port));
 }
 
 
@@ -72,3 +89,4 @@ AppDataSource.initialize()
         logger.error(`Error during datasource initialization.`, err);
         process.exit(1);
     })
+

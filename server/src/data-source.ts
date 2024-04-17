@@ -8,7 +8,7 @@ import { Lesson } from "./models/lesson";
 
 export const AppDataSource = new DataSource({
     type: "postgres",
-    host: process.env.DB_HOST,
+    host:"localhost",
   
     username: process.env.DB_USERNAME,
     password:  process.env.DB_PASSWORD,

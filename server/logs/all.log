@@ -255,3 +255,1010 @@
     "level": "info",
     "message": "The datasource has been initialized successfully."
 }
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "error",
+    "message": "User with email test10@yahoo.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "error",
+    "message": "User with email test1000@yahoo.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "error",
+    "message": "User with email test1001@yahoo.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "error",
+    "message": "User with email 1001@yahoo.com already exists, aborting."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {}
+}
+{
+    "level": "error",
+    "message": "User with email 1001@yahoo.com already exists, aborting."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "test@gmail.com"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "test@gmail.com"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": {
+        "email": "test@gmail.com",
+        "firstName": "aaa",
+        "lastName": "aaa",
+        "password": "Password10"
+    }
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-04-28T23:14:59.968Z",
+        "email": "test@gmail.com",
+        "firstName": "aaa",
+        "id": 2,
+        "lastName": "aaa",
+        "lastUpdatedAt": "2024-04-28T23:14:59.968Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$utDplG7iNTvG/WNsfriFBA$1QOR0m8/yH7NvEEFp3bBjR/i4YgAc9ONsnSjbmAyYBo"
+    }
+}
+{
+    "level": "error",
+    "message": "User with email test@gmail.com already exists, aborting."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-04-29T20:43:44.165Z",
+        "email": "test@gmail.com",
+        "firstName": "aaa",
+        "id": 1,
+        "lastName": "aaaa",
+        "lastUpdatedAt": "2024-04-29T20:43:44.165Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$fwG+dbftYOXWZBNf+EZFjA$Fofcd52nM9FxJReDXTvJ7Siin1XACcf2q4U/5qAgW2c"
+    }
+}
+{
+    "level": "error",
+    "message": "User with email test@gmail.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-04-29T20:43:44.165Z",
+        "email": "test@gmail.com",
+        "firstName": "aaa",
+        "id": 1,
+        "lastName": "aaaa",
+        "lastUpdatedAt": "2024-04-29T20:43:44.165Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$fwG+dbftYOXWZBNf+EZFjA$Fofcd52nM9FxJReDXTvJ7Siin1XACcf2q4U/5qAgW2c"
+    }
+}
+{
+    "level": "error",
+    "message": "User with email test@gmail.com already exists, aborting."
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-04-29T21:20:24.720Z",
+        "email": "test20@gmail.com",
+        "firstName": "mccaskill",
+        "id": 9,
+        "lastName": "andre",
+        "lastUpdatedAt": "2024-04-29T21:20:24.720Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$ogR8o40DaUZLXiZOQTmBVw$n5fDkv8PBwXX9HGWWCOCyrIEGi0yhkwSZh2B/fMWcBk"
+    }
+}
+{
+    "level": "error",
+    "message": "User with email test20@gmail.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-04-29T20:43:44.165Z",
+        "email": "test@gmail.com",
+        "firstName": "aaa",
+        "id": 1,
+        "lastName": "aaaa",
+        "lastUpdatedAt": "2024-04-29T20:43:44.165Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$fwG+dbftYOXWZBNf+EZFjA$Fofcd52nM9FxJReDXTvJ7Siin1XACcf2q4U/5qAgW2c"
+    }
+}
+{
+    "level": "error",
+    "message": "User with email test@gmail.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "code": "ECONNREFUSED",
+    "level": "error",
+    "message": "Error during datasource initialization.",
+    "stack": "AggregateError\n    at internalConnectMultiple (node:net:1114:18)\n    at afterConnectMultiple (node:net:1667:5)"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-04-29T20:43:44.165Z",
+        "email": "test@gmail.com",
+        "firstName": "aaa",
+        "id": 1,
+        "lastName": "aaaa",
+        "lastUpdatedAt": "2024-04-29T20:43:44.165Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$fwG+dbftYOXWZBNf+EZFjA$Fofcd52nM9FxJReDXTvJ7Siin1XACcf2q4U/5qAgW2c"
+    }
+}
+{
+    "level": "error",
+    "message": "User with email test@gmail.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}

@@ -31,6 +31,10 @@ var User = /** @class */ (function () {
         __metadata("design:type", String)
     ], User.prototype, "lastName", void 0);
     __decorate([
+        (0, typeorm_1.Column)(),
+        __metadata("design:type", String)
+    ], User.prototype, "passwordDigest", void 0);
+    __decorate([
         (0, typeorm_1.CreateDateColumn)(),
         __metadata("design:type", Date)
     ], User.prototype, "createdAt", void 0);

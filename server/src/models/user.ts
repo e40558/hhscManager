@@ -19,6 +19,12 @@ export class User {
     @Column()
     lastName:string;
 
+    
+    @Column()
+    passwordDigest:string;
+
+
+
   //  @Column()
  //   passwordHash:string;
 

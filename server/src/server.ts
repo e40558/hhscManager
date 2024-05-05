@@ -15,21 +15,21 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as https from 'https';
 import { root } from "./routes/root";
-import { isInteger } from "./utils";
+import { isInteger } from "./utils/utils";
 import {logger} from "./logger";
 import {AppDataSource} from "./data-source";
-import { createUser } from "./controller/create-user.route";
 
 
 const cors = require("cors");
-
 const bodyParser = require("body-parser");
 const commandLineArgs = require('command-line-args');
+const cookieParser = require('cookie-parser');
 
 
 
 
-
+//const apiRoutes = require('./routes/index')
+import usersRouter from './routes/userRoutes'
 const app = express();
 
 const corsOptions = {
@@ -42,8 +42,10 @@ const corsOptions = {
 function setupExpress() {
     app.use(cors(corsOptions));
     app.use(bodyParser.json());
-    app.route("/").get(root);
-    app.route(`/api/signup`).post(createUser)
+    app.use(cookieParser());
+    app.use('/api/users',usersRouter);
+  
+
 }
 
 

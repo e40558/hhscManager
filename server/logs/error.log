@@ -167,3 +167,81 @@
     "stack": "Error: ENOENT: no such file or directory, open 'C:\\Users\\tjmcc\\source\\hhcsManager\\server\\key.pem'\n    at Object.openSync (node:fs:581:18)\n    at Object.readFileSync (node:fs:457:35)\n    at startServer (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\server.ts:72:21)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\server.ts:86:9\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
     "syscall": "open"
 }
+{
+    "level": "error",
+    "message": "User with email test10@yahoo.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email test1000@yahoo.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email test1001@yahoo.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email 1001@yahoo.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email 1001@yahoo.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email test@gmail.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email test@gmail.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email test@gmail.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email test20@gmail.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email test@gmail.com already exists, aborting."
+}
+{
+    "code": "ECONNREFUSED",
+    "level": "error",
+    "message": "Error during datasource initialization.",
+    "stack": "AggregateError\n    at internalConnectMultiple (node:net:1114:18)\n    at afterConnectMultiple (node:net:1667:5)"
+}
+{
+    "level": "error",
+    "message": "User with email test@gmail.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}

@@ -10,14 +10,15 @@ console.log(process.env.PORT);
 var express = require("express");
 var fs = require("fs");
 var https = require("https");
-var root_1 = require("./routes/root");
-var utils_1 = require("./utils");
+var utils_1 = require("./utils/utils");
 var logger_1 = require("./logger");
 var data_source_1 = require("./data-source");
-var create_user_route_1 = require("./controller/create-user.route");
 var cors = require("cors");
 var bodyParser = require("body-parser");
 var commandLineArgs = require('command-line-args');
+var cookieParser = require('cookie-parser');
+//const apiRoutes = require('./routes/index')
+var userRoutes_1 = require("./routes/userRoutes");
 var app = express();
 var corsOptions = {
     origin: 'http://localhost:4200',
@@ -26,8 +27,8 @@ var corsOptions = {
 function setupExpress() {
     app.use(cors(corsOptions));
     app.use(bodyParser.json());
-    app.route("/").get(root_1.root);
-    app.route("/api/signup").post(create_user_route_1.createUser);
+    app.use(cookieParser());
+    app.use('/api/users', userRoutes_1.default);
 }
 function startServer() {
     var port;

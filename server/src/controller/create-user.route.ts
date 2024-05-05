@@ -2,7 +2,7 @@ import {NextFunction, Request, Response} from "express";
 import {logger} from "../logger";
 import {AppDataSource} from "../data-source";
 import {User} from "../models/user";
-import {calculatePasswordHash} from "../utils";
+import {calculatePasswordHash} from "../utils/utils";
 const crypto = require("crypto");
 
 /**

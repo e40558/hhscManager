@@ -25,14 +25,14 @@ export class AuthService {
     isLoggedOut$: Observable<boolean> = this.isLoggedIn$.pipe(map(isLoggedIn => !isLoggedIn));
 
     constructor(private http: HttpClient) {
-        http.get<User>('/api/user').pipe(
+        http.get<User>('/api/users').pipe(
             tap(console.log))
             .subscribe(user => this.subject.next(user ? user : ANONYMOUS_USER));
     }
 
     signUp(email:string, password:string,lastName:string,firstName:string ) {
 
-        return this.http.post<User>('/api/user', {email, password, firstName,lastName}).pipe(
+        return this.http.post<User>('/api/users', {email, password, firstName,lastName}).pipe(
             shareReplay(),
             tap(user => this.subject.next(user)),);
     }

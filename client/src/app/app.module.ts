@@ -22,6 +22,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule} from '@angular/material/button'
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { LocationComponent } from './location/location.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AboutComponent } from './about/about.component';
     LoginComponent,
     SignupComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule,

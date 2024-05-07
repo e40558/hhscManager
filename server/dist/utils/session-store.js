@@ -9,6 +9,11 @@ var SessionStore = /** @class */ (function () {
     SessionStore.prototype.createSession = function (sessionId, user) {
         this.sessions[sessionId] = new session_1.Session(sessionId, user);
     };
+    SessionStore.prototype.findUserBySessionId = function (sessionId) {
+        var session = this.sessions[sessionId];
+        var isSessionValid = session && session.isValid();
+        return isSessionValid ? session.user : undefined;
+    };
     return SessionStore;
 }());
 exports.sessionStore = new SessionStore();

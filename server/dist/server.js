@@ -19,6 +19,7 @@ var commandLineArgs = require('command-line-args');
 var cookieParser = require('cookie-parser');
 //const apiRoutes = require('./routes/index')
 var userRoutes_1 = require("./routes/userRoutes");
+var lessonsRoutes_1 = require("./routes/lessonsRoutes");
 var app = express();
 var corsOptions = {
     origin: 'http://localhost:4200',
@@ -29,6 +30,7 @@ function setupExpress() {
     app.use(bodyParser.json());
     app.use(cookieParser());
     app.use('/api/users', userRoutes_1.default);
+    app.use('/api/lessons', lessonsRoutes_1.default);
 }
 function startServer() {
     var port;

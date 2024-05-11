@@ -36,63 +36,79 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deleteLocation = exports.updateLocation = exports.addLocation = exports.getLocationById = exports.getAllLocations = void 0;
-var logger_1 = require("../logger");
-var location_1 = require("../models/location");
+exports.login = void 0;
+var express_1 = require("express");
+var argon2 = require("argon2");
+var user_1 = require("../models/user");
 var data_source_1 = require("../data-source");
-var crypto = require("crypto");
-function getAllLocations(request, response, next) {
+var logger_1 = require("../logger");
+var security_utils_1 = require("../utils/security.utils");
+var session_store_1 = require("../utils/session-store");
+function login(req, res, next) {
     return __awaiter(this, void 0, void 0, function () {
-        var locations, error_1;
+        var credentials, user, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 2, , 3]);
-                    logger_1.logger.debug("Called getAllLocation)", request["user"]);
+                    logger_1.logger.debug("Called findUserByEmail()");
+                    credentials = req.body;
                     return [4 /*yield*/, data_source_1.AppDataSource
-                            .getRepository(location_1.Location)
-                            .createQueryBuilder("locations")
-                            .orderBy("locations.seqNo")
-                            .getMany()];
+                            .getRepository(user_1.User)
+                            .findOneBy({
+                            email: credentials.email
+                        })];
                 case 1:
-                    locations = _a.sent();
-                    response.status(200).json({ locations: locations });
+                    user = _a.sent();
+                    if (!user) {
+                        express_1.response.sendStatus(403);
+                    }
+                    else {
+                        loginAndBuildResponse(credentials, user, express_1.response);
+                    }
                     return [3 /*break*/, 3];
                 case 2:
                     error_1 = _a.sent();
-                    logger_1.logger.error("Error calling getAllLocations()");
+                    logger_1.logger.error("Error calling findUserByEmail()");
                     return [2 /*return*/, next(error_1)];
                 case 3: return [2 /*return*/];
             }
         });
     });
 }
-exports.getAllLocations = getAllLocations;
-function getLocationById(request, response) {
-    response.send({});
-}
-exports.getLocationById = getLocationById;
-function addLocation(request, response, next) {
+exports.login = login;
+function loginAndBuildResponse(credentials, user, res) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
+            try {
+                res.status(200).json({ id: user.id, email: user.email });
+            }
+            catch (err) {
+                console.log(err);
+                res.sendStatus(403);
+            }
             return [2 /*return*/];
         });
     });
 }
-exports.addLocation = addLocation;
-function updateLocation(request, response, next) {
+function attemptLogin(credentials, user) {
     return __awaiter(this, void 0, void 0, function () {
+        var isPasswordValid, sessionId;
         return __generator(this, function (_a) {
-            return [2 /*return*/];
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, argon2.verify(user.passwordDigest, credentials.password)];
+                case 1:
+                    isPasswordValid = _a.sent();
+                    if (!isPasswordValid) {
+                        throw new Error("Password Invalid");
+                    }
+                    return [4 /*yield*/, (0, security_utils_1.randomBytes)(32).then(function (bytes) { return bytes.toString('hex'); })];
+                case 2:
+                    sessionId = _a.sent();
+                    console.log("sessionId", sessionId);
+                    session_store_1.sessionStore.createSession(sessionId, user);
+                    return [2 /*return*/, sessionId];
+            }
         });
     });
 }
-exports.updateLocation = updateLocation;
-function deleteLocation(request, response, next) {
-    return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            return [2 /*return*/];
-        });
-    });
-}
-exports.deleteLocation = deleteLocation;

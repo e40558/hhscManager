@@ -40,28 +40,36 @@ exports.updateLesson = exports.deleteLesson = exports.addLesson = exports.getLes
 var logger_1 = require("../logger");
 var data_source_1 = require("../data-source");
 var lesson_1 = require("../models/lesson");
+var session_store_1 = require("../utils/session-store");
 function getAllLessons(request, response, next) {
     return __awaiter(this, void 0, void 0, function () {
-        var lessons, error_1;
+        var sessionId, isSessionValid, lessons, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    _a.trys.push([0, 2, , 3]);
+                    _a.trys.push([0, 4, , 5]);
                     logger_1.logger.debug("Called getAllLesson()", request["user"]);
-                    return [4 /*yield*/, data_source_1.AppDataSource
-                            .getRepository(lesson_1.Lesson)
-                            .createQueryBuilder("lessons")
-                            .orderBy("lessons.seqNo")
-                            .getMany()];
-                case 1:
+                    sessionId = request.cookies["SESSIONID"];
+                    console.log('sessionid = ', sessionId);
+                    isSessionValid = session_store_1.sessionStore.isSessionValid(sessionId);
+                    if (!!isSessionValid) return [3 /*break*/, 1];
+                    response.sendStatus(403);
+                    return [3 /*break*/, 3];
+                case 1: return [4 /*yield*/, data_source_1.AppDataSource
+                        .getRepository(lesson_1.Lesson)
+                        .createQueryBuilder("lessons")
+                        .orderBy("lessons.seqNo")
+                        .getMany()];
+                case 2:
                     lessons = _a.sent();
                     response.status(200).json({ lessons: lessons });
-                    return [3 /*break*/, 3];
-                case 2:
+                    _a.label = 3;
+                case 3: return [3 /*break*/, 5];
+                case 4:
                     error_1 = _a.sent();
                     logger_1.logger.error("Error calling getAllCourses()");
                     return [2 /*return*/, next(error_1)];
-                case 3: return [2 /*return*/];
+                case 5: return [2 /*return*/];
             }
         });
     });

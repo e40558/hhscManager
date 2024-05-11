@@ -23,6 +23,8 @@ import { MatButtonModule} from '@angular/material/button'
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LocationComponent } from './location/location.component';
+import { LessonsComponent } from './lessons/lessons.component';
+import { LessonsService } from './service/lessons.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { LocationComponent } from './location/location.component';
     SignupComponent,
     HomeComponent,
     AboutComponent,
-    LocationComponent
+    LocationComponent,
+    LessonsComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,7 @@ import { LocationComponent } from './location/location.component';
     BrowserAnimationsModule,
     FontAwesomeModule
   ],
-  providers: [AuthService],
+  providers: [LessonsService,AuthService],
               
   bootstrap: [AppComponent]
 })

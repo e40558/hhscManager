@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = require("express");
-var lession_1 = require("../handlers/lession");
+var lesson_1 = require("../handlers/lesson");
 var router = (0, express_1.Router)();
 //const userController = new UserController();
-router.get('/', lession_1.getAllLessons);
-router.get('/:id', lession_1.getLessonById);
-router.post('/', lession_1.addLesson);
-router.patch('/', lession_1.updateLesson);
-router.delete('/:id', lession_1.deleteLesson);
+router.get('/', lesson_1.getAllLessons);
+router.get('/:id', lesson_1.getLessonById);
+router.post('/', lesson_1.addLesson);
+router.patch('/', lesson_1.updateLesson);
+router.delete('/:id', lesson_1.deleteLesson);
 exports.default = router;

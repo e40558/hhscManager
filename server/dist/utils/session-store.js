@@ -6,13 +6,19 @@ var SessionStore = /** @class */ (function () {
     function SessionStore() {
         this.sessions = {};
     }
+    SessionStore.prototype.destroySession = function (sessionId) {
+        delete this.sessions[sessionId];
+    };
     SessionStore.prototype.createSession = function (sessionId, user) {
         this.sessions[sessionId] = new session_1.Session(sessionId, user);
     };
     SessionStore.prototype.findUserBySessionId = function (sessionId) {
         var session = this.sessions[sessionId];
-        var isSessionValid = session && session.isValid();
-        return isSessionValid ? session.user : undefined;
+        return this.isSessionValid(sessionId) ? session.user : undefined;
+    };
+    SessionStore.prototype.isSessionValid = function (sessionId) {
+        var session = this.sessions[sessionId];
+        return session && session.isValid();
     };
     return SessionStore;
 }());

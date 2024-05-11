@@ -1530,3 +1530,643 @@
     "level": "debug",
     "message": "Called getAllLocation)"
 }
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}

@@ -3,6 +3,7 @@ import {logger} from "../logger";
 import {AppDataSource} from "../data-source";
 import {Course} from "../models/course";
 import { Lesson } from "../models/lesson";
+import { sessionStore } from "../utils/session-store";
 
 export async function getAllLessons(
     request: Request, response: Response, next:NextFunction) {
@@ -10,14 +11,29 @@ export async function getAllLessons(
     try {
 
         logger.debug(`Called getAllLesson()`, request["user"]);
+        
+        const sessionId = request.cookies["SESSIONID"];
 
-        const lessons = await AppDataSource
+        console.log('sessionid = ',sessionId)
+
+        const isSessionValid = sessionStore.isSessionValid(sessionId)
+
+        if(!isSessionValid){
+            response.sendStatus(403);
+        }
+
+        else{
+            const lessons = await AppDataSource
             .getRepository(Lesson)
             .createQueryBuilder("lessons")
             .orderBy("lessons.seqNo")
             .getMany();
 
-        response.status(200).json({lessons});
+             response.status(200).json({lessons});
+
+        }
+
+     
 
     }
     catch (error) {

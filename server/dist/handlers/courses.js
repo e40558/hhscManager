@@ -40,6 +40,7 @@ exports.updateCourse = exports.deleteCourse = exports.addCourse = exports.getCou
 var logger_1 = require("../logger");
 var data_source_1 = require("../data-source");
 var course_1 = require("../models/course");
+var lesson_1 = require("../models/lesson");
 function getAllCourses(request, response, next) {
     return __awaiter(this, void 0, void 0, function () {
         var courses, error_1;
@@ -51,6 +52,7 @@ function getAllCourses(request, response, next) {
                     return [4 /*yield*/, data_source_1.AppDataSource
                             .getRepository(course_1.Course)
                             .createQueryBuilder("courses")
+                            // .leftJoinAndSelect("courses.lessons","LESSON")
                             .orderBy("courses.seqNo")
                             .getMany()];
                 case 1:
@@ -69,8 +71,49 @@ function getAllCourses(request, response, next) {
 exports.getAllCourses = getAllCourses;
 function getCourseById(request, response, next) {
     return __awaiter(this, void 0, void 0, function () {
+        var courseUrl, course, message, totalLessons, error_2;
         return __generator(this, function (_a) {
-            return [2 /*return*/];
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 3, , 4]);
+                    logger_1.logger.debug("Called findCourseByUrl()");
+                    courseUrl = request.params.courseUrl;
+                    if (!courseUrl) {
+                        throw "Could not extract the course url from the request.";
+                    }
+                    return [4 /*yield*/, data_source_1.AppDataSource
+                            .getRepository(course_1.Course)
+                            .findOneBy({
+                            url: courseUrl
+                        })];
+                case 1:
+                    course = _a.sent();
+                    if (!course) {
+                        message = "Could not find a course with url ".concat(courseUrl);
+                        logger_1.logger.error(message);
+                        response.status(404).json({ message: message });
+                        return [2 /*return*/];
+                    }
+                    return [4 /*yield*/, data_source_1.AppDataSource
+                            .getRepository(lesson_1.Lesson)
+                            .createQueryBuilder("lessons")
+                            .where("lessons.courseId = :courseId", {
+                            courseId: course.id
+                        })
+                            .getCount()];
+                case 2:
+                    totalLessons = _a.sent();
+                    response.status(200).json({
+                        course: course,
+                        totalLessons: totalLessons
+                    });
+                    return [3 /*break*/, 4];
+                case 3:
+                    error_2 = _a.sent();
+                    logger_1.logger.error("Error calling findCourseByUrl()");
+                    return [2 /*return*/, next(error_2)];
+                case 4: return [2 /*return*/];
+            }
         });
     });
 }

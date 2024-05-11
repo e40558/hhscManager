@@ -310,3 +310,11 @@
     "message": "Error during datasource initialization. Router.use() requires a middleware function but got a Object",
     "stack": "TypeError: Router.use() requires a middleware function but got a Object\n    at Function.use (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\express\\lib\\router\\index.js:469:13)\n    at Function.<anonymous> (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\express\\lib\\application.js:227:21)\n    at Array.forEach (<anonymous>)\n    at Function.use (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\express\\lib\\application.js:224:7)\n    at setupExpress (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\server.ts:48:9)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\src\\server.ts:89:9\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
 }
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}

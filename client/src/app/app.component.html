@@ -4,10 +4,20 @@
 
       <mat-nav-list (click)="sidenav.close()">
 
-          <a mat-list-item routerLink="/">
-              <mat-icon>library_books</mat-icon>
-              <span>Courses</span>
-          </a>
+
+       
+
+
+        <a mat-list-item routerLink="lessons">
+            <mat-icon>library_books</mat-icon>
+            <span>Lessons</span>
+        </a>
+
+
+        <a mat-list-item routerLink="/">
+            <mat-icon>library_books</mat-icon>
+            <span>Courses</span>
+        </a>
 
           <a mat-list-item routerLink="about">
               <mat-icon>question_answer</mat-icon>
@@ -24,7 +34,7 @@
               <span>Login</span>
           </a>
 
-          <a mat-list-item routerLink="login" *ngIf="isLoggedIn$ | async">
+          <a mat-list-item routerLink="login" *ngIf="isLoggedIn$ | async" (click)="logout()">
             <mat-icon>account_circle</mat-icon>
             <span>Logout</span>
         </a>

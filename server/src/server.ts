@@ -32,7 +32,9 @@ const cookieParser = require('cookie-parser');
 import usersRouter from './routes/userRoutes';
 import lessonsRouter from './routes/lessonsRoutes';
 import coursesRouter from './routes/coursesRoutes';
-import locationsRouter  from './routes/locationsRoutes'
+import locationsRouter  from './routes/locationsRoutes';
+import logoutRouter  from './routes/logoutRoutes';
+import loginRouter  from './routes/loginRoutes';
 const app = express();
 
 const corsOptions = {
@@ -49,7 +51,8 @@ function setupExpress() {
     app.use('/api/users',usersRouter);    
     app.use('/api/lessons',lessonsRouter);
     app.use('/api/courses',coursesRouter);    
-    app.use('/api/locations',locationsRouter);
+    app.use('/api/locations',locationsRouter);    
+    app.use('/api/login',loginRouter);
   
 
 }

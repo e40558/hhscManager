@@ -4,17 +4,17 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { LessonsComponent } from './lessons/lessons.component';
 
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent
+    component: LessonsComponent
 
 },
 {
   path:"login",
   component: LoginComponent
-
 },
 {
     path: "about",
@@ -25,6 +25,13 @@ const routes: Routes = [
   component: SignupComponent
 
 },
+{
+  path:"lessons",
+  component: LessonsComponent
+
+},
+
+
 
 
 {

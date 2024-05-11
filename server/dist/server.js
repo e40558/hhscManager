@@ -20,6 +20,9 @@ var cookieParser = require('cookie-parser');
 //const apiRoutes = require('./routes/index')
 var userRoutes_1 = require("./routes/userRoutes");
 var lessonsRoutes_1 = require("./routes/lessonsRoutes");
+var coursesRoutes_1 = require("./routes/coursesRoutes");
+var locationsRoutes_1 = require("./routes/locationsRoutes");
+var loginRoutes_1 = require("./routes/loginRoutes");
 var app = express();
 var corsOptions = {
     origin: 'http://localhost:4200',
@@ -31,6 +34,9 @@ function setupExpress() {
     app.use(cookieParser());
     app.use('/api/users', userRoutes_1.default);
     app.use('/api/lessons', lessonsRoutes_1.default);
+    app.use('/api/courses', coursesRoutes_1.default);
+    app.use('/api/locations', locationsRoutes_1.default);
+    app.use('/api/login', loginRoutes_1.default);
 }
 function startServer() {
     var port;

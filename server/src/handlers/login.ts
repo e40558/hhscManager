@@ -7,7 +7,7 @@ import { AppDataSource } from "../data-source";
 import { logger } from "../logger";
 import { Course } from "../models/course";
 import { Lesson } from "../models/lesson";
-import { randomBytes } from "../utils/security.utils";
+import { createCsrfToken, createSessionToken, randomBytes } from "../utils/security.utils";
 import { sessionStore } from "../utils/session-store";
 
 
@@ -53,9 +53,13 @@ async function loginAndBuildResponse(credentials:any, user:User,  res: Response)
         
         const sessionToken = await attemptLogin(credentials, user);
 
+        const csrfToken = await createCsrfToken();
+
         console.log("Login successful");
 
         res.cookie("SESSIONID", sessionToken, {httpOnly:true, secure:true});
+
+        res.cookie("XSRF-TOKEN", csrfToken);
 
         res.status(200).json({id:user.id, email:user.email});
 
@@ -80,11 +84,7 @@ async function attemptLogin(credentials:any, user:User) {
     if (!isPasswordValid) {
         throw new Error("Password Invalid");
     }
-   const sessionId = await randomBytes(32).then(bytes => bytes.toString('hex'));
-
-   console.log("sessionId", sessionId);
-   sessionStore.createSession(sessionId,user);
-
-   return sessionId;
+  
+     return createSessionToken(user.id.toString());
 
 }

@@ -35,6 +35,10 @@ import coursesRouter from './routes/coursesRoutes';
 import locationsRouter  from './routes/locationsRoutes';
 import logoutRouter  from './routes/logoutRoutes';
 import loginRouter  from './routes/loginRoutes';
+import { retrieveUserIdFromRequest } from "./middleware/get-user.middleware";
+import { checkIfAuthenticated } from "./middleware/authentication.middleware";
+import { createCsrfToken } from "./utils/security.utils";
+import { checkCsrfToken } from "./middleware/csrf.middleware";
 const app = express();
 
 const corsOptions = {
@@ -45,14 +49,17 @@ const corsOptions = {
 
 
 function setupExpress() {
-    app.use(cors(corsOptions));
-    app.use(bodyParser.json());
+   
+    app.use(cors(corsOptions));   
     app.use(cookieParser());
+    app.use(bodyParser.json());
+    app.use(retrieveUserIdFromRequest)
     app.use('/api/users',usersRouter);    
-    app.use('/api/lessons',lessonsRouter);
+    app.use('/api/lessons',checkIfAuthenticated,lessonsRouter);
     app.use('/api/courses',coursesRouter);    
     app.use('/api/locations',locationsRouter);    
     app.use('/api/login',loginRouter);
+    app.use('/api/logout',checkIfAuthenticated, checkCsrfToken  ,logoutRouter);
   
 
 }

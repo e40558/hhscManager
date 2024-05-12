@@ -12,7 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from './service/auth.service';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClientXsrfModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatMenuModule} from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -40,6 +40,10 @@ import { LessonsService } from './service/lessons.service';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientXsrfModule.withOptions({
+      cookieName: 'XSRF-TOKEN',
+      headerName: 'x-xsrf-token'
+  }),
     MatToolbarModule,
     MatListModule,
     MatButtonModule,

@@ -318,3 +318,31 @@
     "level": "error",
     "message": "Error calling findUserByEmail()"
 }
+{
+    "level": "error",
+    "message": "User with email test@gmail.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email test900@gmail.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email test90@gmail.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email test94@gmail.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email test2@gmail.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email test10@gmail.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}

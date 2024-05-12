@@ -43,7 +43,6 @@ var user_1 = require("../models/user");
 var data_source_1 = require("../data-source");
 var logger_1 = require("../logger");
 var security_utils_1 = require("../utils/security.utils");
-var session_store_1 = require("../utils/session-store");
 function login(req, res, next) {
     return __awaiter(this, void 0, void 0, function () {
         var credentials, user, error_1;
@@ -64,7 +63,7 @@ function login(req, res, next) {
                         express_1.response.sendStatus(403);
                     }
                     else {
-                        loginAndBuildResponse(credentials, user, express_1.response);
+                        loginAndBuildResponse(credentials, user, res);
                     }
                     return [3 /*break*/, 3];
                 case 2:
@@ -79,21 +78,35 @@ function login(req, res, next) {
 exports.login = login;
 function loginAndBuildResponse(credentials, user, res) {
     return __awaiter(this, void 0, void 0, function () {
+        var sessionToken, csrfToken, err_1;
         return __generator(this, function (_a) {
-            try {
-                res.status(200).json({ id: user.id, email: user.email });
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 3, , 4]);
+                    return [4 /*yield*/, attemptLogin(credentials, user)];
+                case 1:
+                    sessionToken = _a.sent();
+                    return [4 /*yield*/, (0, security_utils_1.createCsrfToken)()];
+                case 2:
+                    csrfToken = _a.sent();
+                    console.log("Login successful");
+                    res.cookie("SESSIONID", sessionToken, { httpOnly: true, secure: true });
+                    res.cookie("XSRF-TOKEN", csrfToken);
+                    res.status(200).json({ id: user.id, email: user.email });
+                    return [3 /*break*/, 4];
+                case 3:
+                    err_1 = _a.sent();
+                    console.log(err_1);
+                    res.sendStatus(403);
+                    return [3 /*break*/, 4];
+                case 4: return [2 /*return*/];
             }
-            catch (err) {
-                console.log(err);
-                res.sendStatus(403);
-            }
-            return [2 /*return*/];
         });
     });
 }
 function attemptLogin(credentials, user) {
     return __awaiter(this, void 0, void 0, function () {
-        var isPasswordValid, sessionId;
+        var isPasswordValid;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0: return [4 /*yield*/, argon2.verify(user.passwordDigest, credentials.password)];
@@ -102,12 +115,7 @@ function attemptLogin(credentials, user) {
                     if (!isPasswordValid) {
                         throw new Error("Password Invalid");
                     }
-                    return [4 /*yield*/, (0, security_utils_1.randomBytes)(32).then(function (bytes) { return bytes.toString('hex'); })];
-                case 2:
-                    sessionId = _a.sent();
-                    console.log("sessionId", sessionId);
-                    session_store_1.sessionStore.createSession(sessionId, user);
-                    return [2 /*return*/, sessionId];
+                    return [2 /*return*/, (0, security_utils_1.createSessionToken)(user.id.toString())];
             }
         });
     });

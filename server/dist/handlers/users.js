@@ -42,30 +42,50 @@ var argon2 = require("argon2");
 var user_service_1 = require("../service/user-service");
 var passwordValidator_1 = require("../utils/passwordValidator");
 var security_utils_1 = require("../utils/security.utils");
-var session_store_1 = require("../utils/session-store");
+var data_source_1 = require("../data-source");
+var user_1 = require("../models/user");
 var crypto = require("crypto");
 function getUsers(request, response, next) {
     response.send([]);
 }
 exports.getUsers = getUsers;
 function getUser(request, response, next) {
-    var sessionId = request.cookies['SESSIONID'];
-    var user = session_store_1.sessionStore.findUserBySessionId(sessionId);
-    if (user) {
-        response.status(200).json(user);
-    }
-    else {
-        response.sendStatus(204);
-    }
+    return __awaiter(this, void 0, void 0, function () {
+        var user, error_1;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, data_source_1.AppDataSource
+                            .getRepository(user_1.User)
+                            .findOneBy({
+                            id: request["userId"]
+                        })];
+                case 1:
+                    user = _a.sent();
+                    if (user) {
+                        response.status(200).json({ email: user.email, id: user.id });
+                    }
+                    else {
+                        response.set(204);
+                    }
+                    return [3 /*break*/, 3];
+                case 2:
+                    error_1 = _a.sent();
+                    return [3 /*break*/, 3];
+                case 3: return [2 /*return*/];
+            }
+        });
+    });
 }
 exports.getUser = getUser;
 function addUser(request, response, next) {
     return __awaiter(this, void 0, void 0, function () {
-        var credentials, user, message, errors, passwordDigest, user_1, sessionId, error_1;
+        var credentials, user, message, errors, error_2;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    _a.trys.push([0, 7, , 8]);
+                    _a.trys.push([0, 2, , 3]);
                     logger_1.logger.debug("Called createUser()");
                     credentials = request.body;
                     if (!credentials.email) {
@@ -85,34 +105,76 @@ function addUser(request, response, next) {
                         return [2 /*return*/];
                     }
                     errors = (0, passwordValidator_1.validatePassword)(credentials.password);
-                    if (!(errors.length > 0)) return [3 /*break*/, 2];
-                    response.status(400).json({ errors: errors });
-                    return [3 /*break*/, 6];
-                case 2: return [4 /*yield*/, argon2.hash(credentials.password)];
-                case 3:
-                    passwordDigest = _a.sent();
-                    return [4 /*yield*/, (0, user_service_1.createUser)(credentials, passwordDigest)];
-                case 4:
-                    user_1 = _a.sent();
-                    return [4 /*yield*/, (0, security_utils_1.randomBytes)(32).then(function (bytes) { return bytes.toString('hex'); })];
-                case 5:
-                    sessionId = _a.sent();
-                    session_store_1.sessionStore.createSession(sessionId, user_1);
-                    response.cookie("SESSIONID", sessionId), { httpOnly: true, secure: true };
-                    response.status(200).json({ id: user_1.id, email: user_1.email });
-                    _a.label = 6;
-                case 6: return [3 /*break*/, 8];
-                case 7:
-                    error_1 = _a.sent();
+                    if (errors.length > 0) {
+                        response.status(400).json({ errors: errors });
+                    }
+                    else {
+                        createUserAndSession(response, credentials)
+                            .catch(function () { response.sendStatus(500); });
+                    }
+                    return [3 /*break*/, 3];
+                case 2:
+                    error_2 = _a.sent();
                     logger_1.logger.error("Error calling createUser()");
-                    return [2 /*return*/, next(error_1)];
-                case 8: return [2 /*return*/];
+                    return [2 /*return*/, next(error_2)];
+                case 3: return [2 /*return*/];
             }
         });
     });
 }
 exports.addUser = addUser;
 function getUserById(request, response) {
-    response.send({});
+    return __awaiter(this, void 0, void 0, function () {
+        var user, error_3;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, data_source_1.AppDataSource
+                            .getRepository(user_1.User)
+                            .findOneBy({
+                            id: request["userId"]
+                        })];
+                case 1:
+                    user = _a.sent();
+                    if (user) {
+                        response.status(200).json(user);
+                    }
+                    else {
+                        response.set(204);
+                    }
+                    return [3 /*break*/, 3];
+                case 2:
+                    error_3 = _a.sent();
+                    return [3 /*break*/, 3];
+                case 3: return [2 /*return*/];
+            }
+        });
+    });
 }
 exports.getUserById = getUserById;
+function createUserAndSession(response, credentials) {
+    return __awaiter(this, void 0, void 0, function () {
+        var passwordDigest, user, sessionToken, csrfToken;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, argon2.hash(credentials.password)];
+                case 1:
+                    passwordDigest = _a.sent();
+                    return [4 /*yield*/, (0, user_service_1.createUser)(credentials, passwordDigest)];
+                case 2:
+                    user = _a.sent();
+                    return [4 /*yield*/, (0, security_utils_1.createSessionToken)(user.id.toString())];
+                case 3:
+                    sessionToken = _a.sent();
+                    return [4 /*yield*/, (0, security_utils_1.createCsrfToken)()];
+                case 4:
+                    csrfToken = _a.sent();
+                    response.cookie("SESSIONID", sessionToken), { httpOnly: true, secure: true };
+                    response.cookie("XSRF-TOKEN", csrfToken);
+                    response.status(200).json({ id: user.id, email: user.email });
+                    return [2 /*return*/];
+            }
+        });
+    });
+}

@@ -22,7 +22,11 @@ var userRoutes_1 = require("./routes/userRoutes");
 var lessonsRoutes_1 = require("./routes/lessonsRoutes");
 var coursesRoutes_1 = require("./routes/coursesRoutes");
 var locationsRoutes_1 = require("./routes/locationsRoutes");
+var logoutRoutes_1 = require("./routes/logoutRoutes");
 var loginRoutes_1 = require("./routes/loginRoutes");
+var get_user_middleware_1 = require("./middleware/get-user.middleware");
+var authentication_middleware_1 = require("./middleware/authentication.middleware");
+var csrf_middleware_1 = require("./middleware/csrf.middleware");
 var app = express();
 var corsOptions = {
     origin: 'http://localhost:4200',
@@ -30,13 +34,15 @@ var corsOptions = {
 };
 function setupExpress() {
     app.use(cors(corsOptions));
-    app.use(bodyParser.json());
     app.use(cookieParser());
+    app.use(bodyParser.json());
+    app.use(get_user_middleware_1.retrieveUserIdFromRequest);
     app.use('/api/users', userRoutes_1.default);
-    app.use('/api/lessons', lessonsRoutes_1.default);
+    app.use('/api/lessons', authentication_middleware_1.checkIfAuthenticated, lessonsRoutes_1.default);
     app.use('/api/courses', coursesRoutes_1.default);
     app.use('/api/locations', locationsRoutes_1.default);
     app.use('/api/login', loginRoutes_1.default);
+    app.use('/api/logout', authentication_middleware_1.checkIfAuthenticated, csrf_middleware_1.checkCsrfToken, logoutRoutes_1.default);
 }
 function startServer() {
     var port;

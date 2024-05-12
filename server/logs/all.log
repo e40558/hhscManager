@@ -2182,3 +2182,574 @@
     "level": "info",
     "message": "The datasource has been initialized successfully."
 }
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-05-10T09:14:50.088Z",
+        "email": "test@gmail.com",
+        "firstName": "mccaskill",
+        "id": 1,
+        "lastName": "andre",
+        "lastUpdatedAt": "2024-05-10T09:14:50.088Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$WKR0TWST09wy8DQPv8okuw$TuFfscSEFVd9NXFVFVk/q13pEhveci8TXhqN/0aGM/A"
+    }
+}
+{
+    "level": "error",
+    "message": "User with email test@gmail.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-05-11T10:26:53.209Z",
+        "email": "test900@gmail.com",
+        "firstName": "mccaskill",
+        "id": 16,
+        "lastName": "andre",
+        "lastUpdatedAt": "2024-05-11T10:26:53.209Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$itON1Q8zPz0j+9pS1SScWQ$sovLuJGDJCDN7YxgnUh+X0n1UHQjSWIgsQSLQhzDHLQ"
+    }
+}
+{
+    "level": "error",
+    "message": "User with email test900@gmail.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-05-11T10:33:51.070Z",
+        "email": "test90@gmail.com",
+        "firstName": "andre",
+        "id": 17,
+        "lastName": "mccaskill",
+        "lastUpdatedAt": "2024-05-11T10:33:51.070Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$zMJ3YFz8fWX5RnNad265oA$JaJ0hvgx8Io3tdRy3vGDijgaUAMkMBM/BHdAgsimI+g"
+    }
+}
+{
+    "level": "error",
+    "message": "User with email test90@gmail.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-05-11T10:44:26.288Z",
+        "email": "test94@gmail.com",
+        "firstName": "andre",
+        "id": 20,
+        "lastName": "mccaskill",
+        "lastUpdatedAt": "2024-05-11T10:44:26.288Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$B+/vlkT4I7Jt/xVEc08HEQ$nta3Xn5fPLIXU+2ZKeLMooh0GYN5fFB3lxjYd/p9QEI"
+    }
+}
+{
+    "level": "error",
+    "message": "User with email test94@gmail.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "exp": 1715447855,
+    "iat": 1715447615,
+    "level": "debug",
+    "message": "Called getAllLesson()",
+    "sub": "24"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "exp": 1715448482,
+    "iat": 1715448242,
+    "level": "debug",
+    "message": "Called getAllLesson()",
+    "sub": "25"
+}
+{
+    "exp": 1715448482,
+    "iat": 1715448242,
+    "level": "debug",
+    "message": "Called getAllLesson()",
+    "sub": "25"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLesson()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "exp": 1715448834,
+    "iat": 1715448594,
+    "level": "debug",
+    "message": "Called getAllLesson()",
+    "sub": "26"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "exp": 1715449207,
+    "iat": 1715448967,
+    "level": "debug",
+    "message": "Called getAllLesson()",
+    "sub": "1"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-05-11T23:23:53.397Z",
+        "email": "test2@gmail.com",
+        "firstName": "mccaskill",
+        "id": 2,
+        "lastName": "andre",
+        "lastUpdatedAt": "2024-05-11T23:23:53.397Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$O6Eqxa8fgdfS3F7DWd0Tbw$52WDKHr7N7/kk/OokHKvMpBMHD6yoiLFxVSi9Y+0+RQ"
+    }
+}
+{
+    "level": "error",
+    "message": "User with email test2@gmail.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-05-11T23:44:21.089Z",
+        "email": "test10@gmail.com",
+        "firstName": "mccaskill",
+        "id": 3,
+        "lastName": "andre",
+        "lastUpdatedAt": "2024-05-11T23:44:21.089Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$7OYocWW4TpQqPcH5ajxMRQ$dPVJJaNCmiZ1FxBtYIVZp+yKt+p3dsfD3yKxsr3ArPQ"
+    }
+}
+{
+    "level": "error",
+    "message": "User with email test10@gmail.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "error",
+    "message": "Error calling createUser()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}

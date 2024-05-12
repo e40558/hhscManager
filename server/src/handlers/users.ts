@@ -4,8 +4,10 @@ import {logger} from "../logger";
 import * as argon2 from 'argon2';
 import { createUser, findUserByEmail, findUserById } from "../service/user-service";
 import { validatePassword } from "../utils/passwordValidator";
-import { randomBytes } from "../utils/security.utils";
+import { createCsrfToken, createSessionToken, randomBytes } from "../utils/security.utils";
 import { sessionStore } from "../utils/session-store";
+import { AppDataSource } from "../data-source";
+import { User } from "../models/user";
 const crypto = require("crypto");
 
 
@@ -18,18 +20,30 @@ export  function getUsers(request: Request,response: Response,next :NextFunction
 }
 
 
-export  function getUser(request: Request,response: Response,next :NextFunction){
+export async function getUser(request: Request,response: Response,next :NextFunction){
 
-   const sessionId = request.cookies['SESSIONID'];
-   
-   const user = sessionStore.findUserBySessionId(sessionId);
-  
-   if(user){
-    response.status(200).json(user);
-   }
-   else {
-    response.sendStatus(204);
-   }
+    try {
+    
+        const user =  await AppDataSource
+        .getRepository(User)
+        .findOneBy({
+            id: request["userId"]
+        });
+    
+
+
+        if(user){
+            response.status(200).json({email:user.email, id:user.id});
+        }
+        else{
+            response.set(204);
+    
+        }
+            
+        } catch (error) {
+            
+        
+    }
 
 
 }
@@ -73,18 +87,8 @@ export async function addUser (request: Request,response: Response,next :NextFun
             response.status(400).json({errors});
         }
         else {
-             const passwordDigest = await argon2.hash(credentials.password);
-
-             const user = await createUser(credentials, passwordDigest); 
-    
-             const sessionId = await randomBytes(32).then(bytes => bytes.toString('hex'));
-
-             sessionStore.createSession(sessionId,user);
-
-
-             response.cookie("SESSIONID",sessionId),{httpOnly:true, secure:true};
-
-             response.status(200).json({id:user.id, email:user.email});
+            createUserAndSession(response,credentials)
+              .catch(()=>{response.sendStatus(500)});
         }    
 
     }
@@ -95,6 +99,45 @@ export async function addUser (request: Request,response: Response,next :NextFun
 
 }
 
-export function getUserById(request: Request,response: Response){
-  response.send({});
+export async function getUserById(request: Request,response: Response){
+
+    try {
+    
+    const user =  await AppDataSource
+    .getRepository(User)
+    .findOneBy({
+        id: request["userId"]
+    });
+
+    if(user){
+        response.status(200).json(user);
+    }
+    else{
+        response.set(204);
+
+    }
+        
+    } catch (error) {
+        
+    
 }
+}
+
+async function createUserAndSession(response: Response, credentials){
+
+    const passwordDigest = await argon2.hash(credentials.password);
+
+    const user = await createUser(credentials, passwordDigest); 
+
+    const sessionToken = await createSessionToken(user.id.toString());
+
+    const csrfToken= await createCsrfToken();
+
+    response.cookie("SESSIONID",sessionToken),{httpOnly:true, secure:true};
+
+    response.cookie("XSRF-TOKEN",csrfToken)
+
+    response.status(200).json({id:user.id, email:user.email});
+}
+
+

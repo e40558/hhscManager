@@ -36,65 +36,41 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.updateLesson = exports.deleteLesson = exports.addLesson = exports.getLessonById = exports.getAllLessons = void 0;
-var logger_1 = require("../logger");
-var data_source_1 = require("../data-source");
-var lesson_1 = require("../models/lesson");
-function getAllLessons(request, response, next) {
+exports.retrieveUserIdFromRequest = void 0;
+var security_utils_1 = require("../utils/security.utils");
+function retrieveUserIdFromRequest(req, res, next) {
+    var jwt = req.cookies["SESSIONID"];
+    if (jwt) {
+        handleSessionCookie(jwt, req)
+            .then(function () { return next(); })
+            .catch(function (err) {
+            console.error(err);
+            next();
+        });
+    }
+    else {
+        next();
+    }
+}
+exports.retrieveUserIdFromRequest = retrieveUserIdFromRequest;
+function handleSessionCookie(jwt, req) {
     return __awaiter(this, void 0, void 0, function () {
-        var lessons, error_1;
+        var payload, err_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 2, , 3]);
-                    return [4 /*yield*/, data_source_1.AppDataSource
-                            .getRepository(lesson_1.Lesson)
-                            .createQueryBuilder("lessons")
-                            .orderBy("lessons.seqNo")
-                            .getMany()];
+                    return [4 /*yield*/, (0, security_utils_1.decodeJwt)(jwt)];
                 case 1:
-                    lessons = _a.sent();
-                    response.status(200).json({ lessons: lessons });
+                    payload = _a.sent();
+                    req["user"] = payload;
                     return [3 /*break*/, 3];
                 case 2:
-                    error_1 = _a.sent();
-                    logger_1.logger.error("Error calling getAllCourses()");
-                    return [2 /*return*/, next(error_1)];
+                    err_1 = _a.sent();
+                    console.log("Error: Could not extract user from request:", err_1.message);
+                    return [3 /*break*/, 3];
                 case 3: return [2 /*return*/];
             }
         });
     });
 }
-exports.getAllLessons = getAllLessons;
-function getLessonById(request, response, next) {
-    return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            return [2 /*return*/];
-        });
-    });
-}
-exports.getLessonById = getLessonById;
-function addLesson(request, response, next) {
-    return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            return [2 /*return*/];
-        });
-    });
-}
-exports.addLesson = addLesson;
-function deleteLesson(request, response, next) {
-    return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            return [2 /*return*/];
-        });
-    });
-}
-exports.deleteLesson = deleteLesson;
-function updateLesson(request, response, next) {
-    return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            return [2 /*return*/];
-        });
-    });
-}
-exports.updateLesson = updateLesson;

@@ -10,19 +10,9 @@ export async function getAllLessons(
 
     try {
 
-        logger.debug(`Called getAllLesson()`, request["user"]);
-        
-        const sessionId = request.cookies["SESSIONID"];
+       
 
-        console.log('sessionid = ',sessionId)
-
-        const isSessionValid = sessionStore.isSessionValid(sessionId)
-
-        if(!isSessionValid){
-            response.sendStatus(403);
-        }
-
-        else{
+    
             const lessons = await AppDataSource
             .getRepository(Lesson)
             .createQueryBuilder("lessons")
@@ -32,10 +22,6 @@ export async function getAllLessons(
              response.status(200).json({lessons});
 
         }
-
-     
-
-    }
     catch (error) {
         logger.error(`Error calling getAllCourses()`);
         return next(error);

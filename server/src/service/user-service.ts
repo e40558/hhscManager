@@ -28,8 +28,10 @@ export async function createUser(user: User,passwordDigest) {
 }
 
 export function getUser(){
-
+    
 }
+
+
 
 export function findUserById(id: string) {
    

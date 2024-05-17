@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { getUserById,addUser, getUser } from "../handlers/users";
-import { getAllCourses, getCourseById, addCourse } from "../handlers/courses";
+import { getAllCourses, getCourseById,  createCourse } from "../handlers/courses";
 
 
 const router= Router();
@@ -11,7 +11,7 @@ const router= Router();
 router.get('/', getAllCourses);
 router.get('/:id',getCourseById);
 
-router.post('/', addCourse);
+router.post('/', createCourse);
 
 
 

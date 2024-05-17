@@ -17,10 +17,9 @@ var cors = require("cors");
 var bodyParser = require("body-parser");
 var commandLineArgs = require('command-line-args');
 var cookieParser = require('cookie-parser');
-//const apiRoutes = require('./routes/index')
+var index_1 = require("./routes/index");
 var userRoutes_1 = require("./routes/userRoutes");
 var lessonsRoutes_1 = require("./routes/lessonsRoutes");
-var coursesRoutes_1 = require("./routes/coursesRoutes");
 var locationsRoutes_1 = require("./routes/locationsRoutes");
 var logoutRoutes_1 = require("./routes/logoutRoutes");
 var loginRoutes_1 = require("./routes/loginRoutes");
@@ -37,9 +36,9 @@ function setupExpress() {
     app.use(cookieParser());
     app.use(bodyParser.json());
     app.use(get_user_middleware_1.retrieveUserIdFromRequest);
+    app.use('/api', index_1.routes);
     app.use('/api/users', userRoutes_1.default);
-    app.use('/api/lessons', authentication_middleware_1.checkIfAuthenticated, lessonsRoutes_1.default);
-    app.use('/api/courses', coursesRoutes_1.default);
+    app.use('/api/lessons', lessonsRoutes_1.default);
     app.use('/api/locations', locationsRoutes_1.default);
     app.use('/api/login', loginRoutes_1.default);
     app.use('/api/logout', authentication_middleware_1.checkIfAuthenticated, csrf_middleware_1.checkCsrfToken, logoutRoutes_1.default);

@@ -8,7 +8,7 @@ const router= Router();
 //const userController = new UserController();
 
 
-router.get('/', checkIfAuthenticated,getAllLessons);
+router.get('/', getAllLessons);
 router.get('/:id',getLessonById);
 router.post('/', addLesson);
 router.patch('/', updateLesson);

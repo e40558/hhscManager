@@ -1,13 +1,11 @@
-
-import * as express from 'express';
-
-import user from "./userRoutes";
-
-const router = express.Router();
-
-router.get("/healthcheck", (_, res) => res.sendStatus(200));
+import { Request, Response, Router } from 'express';
+import  course  from './coursesRoutes';
 
 
-router.use('/user',user);
 
-export default router;
+
+const routes = Router();
+
+routes.use('/courses', course);
+
+export { routes };

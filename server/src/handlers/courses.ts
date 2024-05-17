@@ -3,6 +3,7 @@ import {logger} from "../logger";
 import {AppDataSource} from "../data-source";
 import {Course} from "../models/course";
 import { Lesson } from "../models/lesson";
+import { findAll,addCourse } from "../service/course-service";
 
 export async function getAllCourses(
     request: Request, response: Response, next:NextFunction) {
@@ -11,12 +12,7 @@ export async function getAllCourses(
 
         logger.debug(`Called getAllCourses()`, request["user"]);
 
-        const courses = await AppDataSource
-            .getRepository(Course)
-            .createQueryBuilder("courses")
-           // .leftJoinAndSelect("courses.lessons","LESSON")
-            .orderBy("courses.seqNo")
-            .getMany();
+        const courses = await findAll();
 
         response.status(200).json({courses});
 
@@ -79,8 +75,52 @@ export async function getCourseById(
 }
 
 
-export async function addCourse(
+export async function createCourse(
     request: Request, response: Response, next:NextFunction) {
+        try {
+
+            logger.debug(`Called createCourse()`);
+    
+            const data = request.body;
+    
+            if (!data) {
+                throw `No data available, cannot save course.`;
+            }
+    
+            const course = 
+            
+            await AppDataSource.manager.transaction(
+              "REPEATABLE READ",
+                async (transactionalEntityManager) => {
+    
+                  const repository = transactionalEntityManager.getRepository(Course);
+    
+                  const result = await repository
+                      .createQueryBuilder("courses")
+                      .select("MAX(courses.seqNo)", "max")
+                      .getRawOne();
+    
+                  const course = repository
+                      .create({
+                          ...data,
+                          seqNo: ( result?.max ?? 0 ) + 1
+                      });
+    
+                  await repository.save(course);
+    
+                  return course;
+                }
+            );
+    
+            response.status(200).json({course});
+    
+        }
+        catch(error) {
+            logger.error(`Error calling createCourse()`);
+            return next(error);
+        }
+
+    
 }
 
 export async function deleteCourse(

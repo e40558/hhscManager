@@ -9,7 +9,7 @@ import { LessonsComponent } from './lessons/lessons.component';
 const routes: Routes = [
   {
     path: "",
-    component: LessonsComponent
+    component: HomeComponent
 
 },
 {

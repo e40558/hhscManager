@@ -20,14 +20,13 @@ export class AppComponent  implements OnInit {
     faChevronCircleRight=faChevronCircleRight;
     faBars=faBars;
 
-    constructor(private authService:AuthService) {
+    constructor(public auth:AuthService) {
 
     }
 
     ngOnInit() {
-        this.isLoggedIn$ = this.authService.isLoggedIn$;
-        this.isLoggedOut$ = this.authService.isLoggedOut$;
-        this.user$ = this.authService.user$;
+      this.auth.retrieveAuthInfoFromUrl()
+       
     }
 
 
@@ -44,10 +43,18 @@ export class AppComponent  implements OnInit {
      
     }
 
-    logout() {
+    signUp() {
+      this.auth.signUp();
+  }
 
-        this.authService.logout().subscribe();
+  login() {
+      
+      this.auth.login();
 
-    }
+  }
+
+  logout() {
+      this.auth.logout();
+  }
 
 }

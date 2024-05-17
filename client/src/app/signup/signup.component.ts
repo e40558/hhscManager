@@ -44,15 +44,7 @@ export class SignupComponent {
 
       if (val.email && val.password && val.password === val.confirm) {
 
-          this.authService.signUp(val.email, val.password, val.firstName, val.lastName)
-              .subscribe(
-                  () => {
-                      this.router.navigateByUrl('/');
-
-                      console.log("User created successfully")
-                  },
-                  response => this.errors = response.error.errors
-              );
+       
 
       }
 

@@ -22,7 +22,7 @@ export class LessonsComponent implements OnInit {
 
     ngOnInit() {
         this.lessons$ = this.lessonsService.loadAllLessons().pipe( ),tap(lesson => console.log('testing'))
-        this.isLoggedIn$ = this.authService.isLoggedIn$;
+       
     }
 
 }

@@ -20,6 +20,8 @@ import {logger} from "./logger";
 import {AppDataSource} from "./data-source";
 
 
+
+
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const commandLineArgs = require('command-line-args');
@@ -28,7 +30,7 @@ const cookieParser = require('cookie-parser');
 
 
 
-//const apiRoutes = require('./routes/index')
+import { routes as apiRoutes } from './routes/index';
 import usersRouter from './routes/userRoutes';
 import lessonsRouter from './routes/lessonsRoutes';
 import coursesRouter from './routes/coursesRoutes';
@@ -54,9 +56,9 @@ function setupExpress() {
     app.use(cookieParser());
     app.use(bodyParser.json());
     app.use(retrieveUserIdFromRequest)
+    app.use('/api', apiRoutes);
     app.use('/api/users',usersRouter);    
-    app.use('/api/lessons',checkIfAuthenticated,lessonsRouter);
-    app.use('/api/courses',coursesRouter);    
+    app.use('/api/lessons',lessonsRouter);   
     app.use('/api/locations',locationsRouter);    
     app.use('/api/login',loginRouter);
     app.use('/api/logout',checkIfAuthenticated, checkCsrfToken  ,logoutRouter);

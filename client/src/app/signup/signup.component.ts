@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../service/auth.service';
+import { error } from 'winston';
 
 @Component({
   selector: 'app-signup',
@@ -46,12 +47,14 @@ export class SignupComponent {
 
           this.authService.signUp(val.email, val.password, val.firstName, val.lastName)
               .subscribe(
-                  () => {
-                      this.router.navigateByUrl('/');
+                 {
+                    next:()=>{
+                        this.router.navigateByUrl('/');
+                        console.log("User created successfully")
+                    },
+                    error:(response)=>{this.errors = response.error.errors},               
 
-                      console.log("User created successfully")
-                  },
-                  response => this.errors = response.error.errors
+                 }
               );
 
       }

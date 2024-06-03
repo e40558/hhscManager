@@ -1,8 +1,8 @@
 import {Response, Request, NextFunction} from "express";
 import {logger} from "../logger";
 import {AppDataSource} from "../data-source";
-import {Course} from "../models/course";
-import { Lesson } from "../models/lesson";
+import {Course} from "../enties/course";
+import { Lesson } from "../enties/lesson";
 
 export async function getAllCourses(
     request: Request, response: Response, next:NextFunction) {

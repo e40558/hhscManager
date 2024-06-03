@@ -1,4 +1,4 @@
-import { User } from "../models/user";
+import { User } from "../enties/user";
 import { Session } from "./session";
 
 

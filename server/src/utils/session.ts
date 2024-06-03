@@ -1,5 +1,5 @@
 import { Moment} from "moment";
-import { User } from "../models/user";
+import { User } from "../enties/user";
 import moment = require("moment");
 
 

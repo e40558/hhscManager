@@ -25,6 +25,8 @@ import { AboutComponent } from './about/about.component';
 import { LocationComponent } from './location/location.component';
 import { LessonsComponent } from './lessons/lessons.component';
 import { LessonsService } from './service/lessons.service';
+import { AdminComponent } from './admin/admin.component';
+import { RbacAllowDirective } from './common/rbac-allow.directive';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { LessonsService } from './service/lessons.service';
     HomeComponent,
     AboutComponent,
     LocationComponent,
-    LessonsComponent
+    LessonsComponent,
+    AdminComponent,
+    RbacAllowDirective
   ],
   imports: [
     BrowserModule,

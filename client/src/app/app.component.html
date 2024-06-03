@@ -19,10 +19,16 @@
             <span>Courses</span>
         </a>
 
-          <a mat-list-item routerLink="about">
-              <mat-icon>question_answer</mat-icon>
-              <span>About</span>
-          </a>
+        <a mat-list-item routerLink="/about">
+            <mat-icon>question_answer</mat-icon>
+            <span>About</span>
+        </a>
+        
+        
+        <a mat-list-item routerLink="/admin" *rbacAllow="['ADMIN']">
+            <mat-icon>question_answer</mat-icon>
+            <span>Admin </span>
+        </a>
 
           <a mat-list-item routerLink="/signup" *ngIf="isLoggedOut$ | async">
               <mat-icon>person_add</mat-icon>
@@ -34,7 +40,7 @@
               <span>Login</span>
           </a>
 
-          <a mat-list-item routerLink="login" *ngIf="isLoggedIn$ | async" (click)="logout()">
+          <a mat-list-item routerLink="/login" *ngIf="isLoggedIn$ | async" (click)="logout()">
             <mat-icon>account_circle</mat-icon>
             <span>Logout</span>
         </a>

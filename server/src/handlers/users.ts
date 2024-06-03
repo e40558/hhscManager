@@ -7,33 +7,64 @@ import { validatePassword } from "../utils/passwordValidator";
 import { createCsrfToken, createSessionToken, randomBytes } from "../utils/security.utils";
 import { sessionStore } from "../utils/session-store";
 import { AppDataSource } from "../data-source";
-import { User } from "../models/user";
+import { User } from "../enties/user";
 const crypto = require("crypto");
 
 
 
 
-export  function getUsers(request: Request,response: Response,next :NextFunction){
+export async function getUsers(request: Request,response: Response,next :NextFunction){
 
-    response.send([]);
+    try {
+
+        logger.debug(`Called getAllUsers()`);
+
+        const users = await AppDataSource
+            .getRepository(User)
+            .createQueryBuilder("users")
+            .leftJoinAndSelect("users.roles","ROLE")
+            //.orderBy("courses.seqNo")
+            .getMany();
+
+        response.status(200).json({users});
+
+    }
+    catch (error) {
+        logger.error(`Error calling getAllUsers()`);
+        return next(error);
+    }
+
 
 }
+
+
 
 
 export async function getUser(request: Request,response: Response,next :NextFunction){
 
     try {
     
-        const user =  await AppDataSource
+        const id =request["userId"]
+       
+        const user = await AppDataSource
         .getRepository(User)
-        .findOneBy({
-            id: request["userId"]
-        });
+        .createQueryBuilder("users")
+        .leftJoinAndSelect("users.roles","ROLE")
+        .where("users.id = :id", {id: 4})
+        .getOne();
+
+
+        
+
+
+
+        
     
 
 
         if(user){
-            response.status(200).json({email:user.email, id:user.id});
+           //response.status(200).json({email:user.email, id:user.id});
+             response.status(200).json({user});
         }
         else{
             response.set(204);
@@ -56,6 +87,7 @@ export async function addUser (request: Request,response: Response,next :NextFun
 
       
         const credentials = request.body;
+        
 
         if (!credentials.email) {
             throw "Could not extract the email from the request, aborting.";
@@ -129,7 +161,7 @@ async function createUserAndSession(response: Response, credentials){
 
     const user = await createUser(credentials, passwordDigest); 
 
-    const sessionToken = await createSessionToken(user.id.toString());
+    const sessionToken = await createSessionToken(user);
 
     const csrfToken= await createCsrfToken();
 

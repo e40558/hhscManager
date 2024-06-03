@@ -6,6 +6,7 @@ const util = require('util');
 const crypto = require('crypto');
 import * as jwt from 'jsonwebtoken';
 import * as fs from "fs";
+import { User } from "../enties/user";
 
 
 
@@ -20,12 +21,14 @@ const RSA_PUBLIC_KEY = fs.readFileSync('./ssl/public.key');
 
 const SESSION_DURATION = 240;
 
-export  function createSessionToken(userId:string){
+export  function createSessionToken(user:User){
   
-  return signJwt({}, RSA_PRIVATE_KEY,{
+  return signJwt({
+    roles:user.roles
+  }, RSA_PRIVATE_KEY,{
         algorithm: 'RS256',
         expiresIn: 240,
-        subject: userId
+        subject: user.id.toString()
     });
 }
 

@@ -1,6 +1,6 @@
 import { AppDataSource } from "../data-source";
 import { logger } from "../logger";
-import { User } from "../models/user";
+import { User } from "../enties/user";
 
 
 
@@ -8,7 +8,8 @@ import { User } from "../models/user";
 
 export async function createUser(user: User,passwordDigest) {
 
-    const {email,firstName,lastName} = user;
+    const {email,firstName,lastName,roles} = user;
+    console.log(user)
     
     const repository = AppDataSource.getRepository(User);
 
@@ -16,7 +17,10 @@ export async function createUser(user: User,passwordDigest) {
         email,
         firstName,
         lastName,
-        passwordDigest
+        passwordDigest,
+        roles
+        
+        
       //  pictureUrl,
        // isAdmin,
       //  passwordHash,

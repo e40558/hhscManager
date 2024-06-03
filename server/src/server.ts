@@ -27,9 +27,9 @@ const cookieParser = require('cookie-parser');
 
 
 
+import { routes as apiRoutes } from './routes/index';
 
-//const apiRoutes = require('./routes/index')
-import usersRouter from './routes/userRoutes';
+
 import lessonsRouter from './routes/lessonsRoutes';
 import coursesRouter from './routes/coursesRoutes';
 import locationsRouter  from './routes/locationsRoutes';
@@ -54,12 +54,8 @@ function setupExpress() {
     app.use(cookieParser());
     app.use(bodyParser.json());
     app.use(retrieveUserIdFromRequest)
-    app.use('/api/users',usersRouter);    
-    app.use('/api/lessons',checkIfAuthenticated,lessonsRouter);
-    app.use('/api/courses',coursesRouter);    
-    app.use('/api/locations',locationsRouter);    
-    app.use('/api/login',loginRouter);
-    app.use('/api/logout',checkIfAuthenticated, checkCsrfToken  ,logoutRouter);
+    app.use('/api', apiRoutes);  
+      
   
 
 }

@@ -2,11 +2,11 @@
 
 import {Request, Response, request, response, NextFunction} from "express";
 import * as argon2 from 'argon2';
-import { User } from "../models/user";
+import { User } from "../enties/user";
 import { AppDataSource } from "../data-source";
 import { logger } from "../logger";
-import { Course } from "../models/course";
-import { Lesson } from "../models/lesson";
+import { Course } from "../enties/course";
+import { Lesson } from "../enties/lesson";
 import { createCsrfToken, createSessionToken, randomBytes } from "../utils/security.utils";
 import { sessionStore } from "../utils/session-store";
 
@@ -20,7 +20,7 @@ export async function login(req: Request, res: Response,  next:NextFunction  ) {
 
         const credentials = req.body;
 
-      
+        console.log (credentials);
 
         const user = await AppDataSource
             .getRepository(User)
@@ -85,6 +85,6 @@ async function attemptLogin(credentials:any, user:User) {
         throw new Error("Password Invalid");
     }
   
-     return createSessionToken(user.id.toString());
+     return createSessionToken(user);
 
 }

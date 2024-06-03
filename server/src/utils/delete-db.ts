@@ -5,9 +5,9 @@ const result = dotenv.config();
 
 import "reflect-metadata";
 import { AppDataSource } from "../data-source";
-import { Course } from "../models/course";
-import { Lesson } from "../models/lesson";
-import { User } from "../models/user";
+import { Course } from "../enties/course";
+import { Lesson } from "../enties/lesson";
+import { User } from "../enties/user";
 
 async function deleteDb() {
 

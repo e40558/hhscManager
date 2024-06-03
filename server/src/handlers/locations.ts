@@ -6,7 +6,7 @@ import { createUser, findUserByEmail, findUserById } from "../service/user-servi
 import { validatePassword } from "../utils/passwordValidator";
 import { randomBytes } from "../utils/security.utils";
 import { sessionStore } from "../utils/session-store";
-import { Location } from "../models/location";
+import { Location } from "../enties/location";
 import { AppDataSource } from "../data-source";
 const crypto = require("crypto");
 

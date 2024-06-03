@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const lesson_1 = require("../handlers/lesson");
+const authentication_middleware_1 = require("../middleware/authentication.middleware");
+const authorization_middleware_1 = require("../middleware/authorization.middleware");
+const _ = require("lodash");
+const router = (0, express_1.Router)();
+//const userController = new UserController();
+router.get('/', authentication_middleware_1.checkIfAuthenticated, _.partial(authorization_middleware_1.checkIfAuthorized, ['STUDENT']), lesson_1.getAllLessons);
+router.get('/:id', lesson_1.getLessonById);
+router.post('/', lesson_1.addLesson);
+router.patch('/', lesson_1.updateLesson);
+router.delete('/:id', lesson_1.deleteLesson);
+exports.default = router;

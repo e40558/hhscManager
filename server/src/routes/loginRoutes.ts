@@ -1,8 +1,9 @@
-import {Router} from 'express';
+import * as express from 'express';
 import { login } from '../handlers/login';
 
 
-const router = Router();
+const router= express.Router();
+
 
 
 router.post('/', login);

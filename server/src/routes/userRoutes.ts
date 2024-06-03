@@ -1,5 +1,5 @@
 import * as express from 'express';
-import { getUserById,addUser, getUser } from "../handlers/users";
+import { getUserById,addUser, getUser, getUsers } from "../handlers/users";
 
 
 const router= express.Router();

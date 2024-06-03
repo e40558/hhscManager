@@ -25,6 +25,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@types/lodash": "^4.17.4",
     "argon2": "^0.40.1",
     "body-parser": "^1.20.2",
     "command-line-args": "^5.2.1",

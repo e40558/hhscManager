@@ -27,7 +27,14 @@ import { LessonsComponent } from './lessons/lessons.component';
 import { LessonsService } from './service/lessons.service';
 import { AdminComponent } from './admin/admin.component';
 import { RbacAllowDirective } from './common/rbac-allow.directive';
+import { Router } from '@angular/router';
+import { AuthorizationGuard } from './service/auth.guard';
 
+
+
+export function createAdminOnlyGuard(authService:AuthService, router:Router) {
+  return new AuthorizationGuard(['ADMIN'], authService, router);
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +70,18 @@ import { RbacAllowDirective } from './common/rbac-allow.directive';
     BrowserAnimationsModule,
     FontAwesomeModule
   ],
-  providers: [LessonsService,AuthService],
+  providers: [LessonsService,
+    AuthService,
+    {
+        provide: 'adminsOnlyGuard',
+        useFactory: (authService:AuthService,
+                     router:Router) =>
+            new AuthorizationGuard(['ADMIN'], authService, router),
+        deps: [
+          AuthService,Router
+        ]
+     }
+ ],
               
   bootstrap: [AppComponent]
 })

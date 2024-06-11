@@ -11,7 +11,7 @@ const router= Router();
 
 
 router.get('/', checkIfAuthenticated,
-                _.partial(checkIfAuthorized,['STUDENT']),
+                _.partial(checkIfAuthorized,['ADMIN']),
                 getAllLessons);
 router.get('/:id',getLessonById);
 router.post('/', addLesson);

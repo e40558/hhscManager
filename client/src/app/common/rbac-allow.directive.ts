@@ -20,7 +20,7 @@ export class RbacAllowDirective implements OnDestroy {
         private viewContainer: ViewContainerRef,
         private authService: AuthService) {
 
-            console.log('inside')
+         
         this.sub = authService.user$.subscribe(
             user => {
                 this.user = user;

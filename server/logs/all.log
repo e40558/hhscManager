@@ -3755,3 +3755,437 @@
     "level": "debug",
     "message": "Called findUserByEmail()"
 }
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "error",
+    "message": "Error during datasource initialization. Data type \"Array\" in \"User.roles\" is not supported by \"postgres\" database.",
+    "stack": "DataTypeNotSupportedError: Data type \"Array\" in \"User.roles\" is not supported by \"postgres\" database.\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:136:31\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validate (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:128:18)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:43:18\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validateMany (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:42:25)\n    at DataSource.buildMetadatas (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:730:33)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async DataSource.initialize (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:263:13)"
+}
+{
+    "level": "error",
+    "message": "Error during datasource initialization. Data type \"Array\" in \"User.roles\" is not supported by \"postgres\" database.",
+    "stack": "DataTypeNotSupportedError: Data type \"Array\" in \"User.roles\" is not supported by \"postgres\" database.\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:136:31\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validate (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:128:18)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:43:18\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validateMany (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:42:25)\n    at DataSource.buildMetadatas (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:730:33)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async DataSource.initialize (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:263:13)"
+}
+{
+    "level": "error",
+    "message": "Error during datasource initialization. Data type \"string\" in \"User.roles\" is not supported by \"postgres\" database.",
+    "stack": "DataTypeNotSupportedError: Data type \"string\" in \"User.roles\" is not supported by \"postgres\" database.\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:136:31\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validate (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:128:18)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:43:18\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validateMany (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:42:25)\n    at DataSource.buildMetadatas (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:730:33)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async DataSource.initialize (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:263:13)"
+}
+{
+    "level": "error",
+    "message": "Error during datasource initialization. Data type \"Array\" in \"User.roles\" is not supported by \"postgres\" database.",
+    "stack": "DataTypeNotSupportedError: Data type \"Array\" in \"User.roles\" is not supported by \"postgres\" database.\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:136:31\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validate (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:128:18)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:43:18\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validateMany (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:42:25)\n    at DataSource.buildMetadatas (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:730:33)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async DataSource.initialize (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:263:13)"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-06-04T22:32:05.271Z",
+        "email": "admin@gmail.com",
+        "firstName": "andre",
+        "id": 2,
+        "lastName": "mccaskill",
+        "lastUpdatedAt": "2024-06-04T22:32:05.271Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$emBMe5dka7+P1xv2BT6EOA$DlIcB6CYQEs2mAF1AmmVw/VyQyKgAL/vrXonytbWJUs",
+        "roles": [
+            "ADMIN"
+        ]
+    }
+}
+{
+    "level": "error",
+    "message": "User with email admin@gmail.com already exists, aborting."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": {
+        "createdAt": "2024-06-04T22:32:05.271Z",
+        "email": "admin@gmail.com",
+        "firstName": "andre",
+        "id": 2,
+        "lastName": "mccaskill",
+        "lastUpdatedAt": "2024-06-04T22:32:05.271Z",
+        "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$emBMe5dka7+P1xv2BT6EOA$DlIcB6CYQEs2mAF1AmmVw/VyQyKgAL/vrXonytbWJUs",
+        "roles": [
+            "ADMIN"
+        ]
+    }
+}
+{
+    "level": "error",
+    "message": "User with email admin@gmail.com already exists, aborting."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}

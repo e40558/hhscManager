@@ -17,6 +17,6 @@ routes.use('/users', userRoutes_1.default);
 routes.use('/lessons', lessonsRoutes_1.default);
 routes.use('/locations', locationsRoutes_1.default);
 routes.use('/courses', coursesRoutes_1.default);
-routes.use('/login ', loginRoutes_1.default);
+routes.use('/login', loginRoutes_1.default);
 routes.use('/admin', adminRoutes_1.default);
-routes.use('logout', authentication_middleware_1.checkIfAuthenticated, csrf_middleware_1.checkCsrfToken, logoutRoutes_1.default);
+routes.use('/logout', authentication_middleware_1.checkIfAuthenticated, csrf_middleware_1.checkCsrfToken, logoutRoutes_1.default);

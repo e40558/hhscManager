@@ -448,3 +448,43 @@
     "level": "error",
     "message": "Error calling findUserByEmail()"
 }
+{
+    "level": "error",
+    "message": "Error during datasource initialization. Data type \"Array\" in \"User.roles\" is not supported by \"postgres\" database.",
+    "stack": "DataTypeNotSupportedError: Data type \"Array\" in \"User.roles\" is not supported by \"postgres\" database.\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:136:31\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validate (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:128:18)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:43:18\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validateMany (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:42:25)\n    at DataSource.buildMetadatas (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:730:33)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async DataSource.initialize (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:263:13)"
+}
+{
+    "level": "error",
+    "message": "Error during datasource initialization. Data type \"Array\" in \"User.roles\" is not supported by \"postgres\" database.",
+    "stack": "DataTypeNotSupportedError: Data type \"Array\" in \"User.roles\" is not supported by \"postgres\" database.\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:136:31\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validate (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:128:18)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:43:18\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validateMany (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:42:25)\n    at DataSource.buildMetadatas (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:730:33)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async DataSource.initialize (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:263:13)"
+}
+{
+    "level": "error",
+    "message": "Error during datasource initialization. Data type \"string\" in \"User.roles\" is not supported by \"postgres\" database.",
+    "stack": "DataTypeNotSupportedError: Data type \"string\" in \"User.roles\" is not supported by \"postgres\" database.\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:136:31\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validate (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:128:18)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:43:18\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validateMany (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:42:25)\n    at DataSource.buildMetadatas (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:730:33)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async DataSource.initialize (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:263:13)"
+}
+{
+    "level": "error",
+    "message": "Error during datasource initialization. Data type \"Array\" in \"User.roles\" is not supported by \"postgres\" database.",
+    "stack": "DataTypeNotSupportedError: Data type \"Array\" in \"User.roles\" is not supported by \"postgres\" database.\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:136:31\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validate (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:128:18)\n    at C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:43:18\n    at Array.forEach (<anonymous>)\n    at EntityMetadataValidator.validateMany (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\metadata-builder\\EntityMetadataValidator.ts:42:25)\n    at DataSource.buildMetadatas (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:730:33)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async DataSource.initialize (C:\\Users\\tjmcc\\source\\hhcsManager\\server\\node_modules\\src\\data-source\\DataSource.ts:263:13)"
+}
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}
+{
+    "level": "error",
+    "message": "User with email admin@gmail.com already exists, aborting."
+}
+{
+    "level": "error",
+    "message": "User with email admin@gmail.com already exists, aborting."
+}

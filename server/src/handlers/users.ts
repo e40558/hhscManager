@@ -8,6 +8,7 @@ import { createCsrfToken, createSessionToken, randomBytes } from "../utils/secur
 import { sessionStore } from "../utils/session-store";
 import { AppDataSource } from "../data-source";
 import { User } from "../enties/user";
+import { isInteger } from "../utils/utils";
 const crypto = require("crypto");
 
 
@@ -44,13 +45,13 @@ export async function getUser(request: Request,response: Response,next :NextFunc
 
     try {
     
-        const id =request["userId"]
        
+        const userInfo = request["user"];
+
         const user = await AppDataSource
         .getRepository(User)
         .createQueryBuilder("users")
-        .leftJoinAndSelect("users.roles","ROLE")
-        .where("users.id = :id", {id: 4})
+        .where("users.id= :id", {id:  userInfo.sub})
         .getOne();
 
 
@@ -63,8 +64,8 @@ export async function getUser(request: Request,response: Response,next :NextFunc
 
 
         if(user){
-           //response.status(200).json({email:user.email, id:user.id});
-             response.status(200).json({user});
+          response.status(200).json(user);
+           
         }
         else{
             response.set(204);

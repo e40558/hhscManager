@@ -11,8 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Role = void 0;
 const typeorm_1 = require("typeorm");
-const typeorm_2 = require("typeorm");
-const user_1 = require("./user");
 let Role = class Role extends typeorm_1.BaseEntity {
 };
 exports.Role = Role;
@@ -24,13 +22,6 @@ __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
 ], Role.prototype, "name", void 0);
-__decorate([
-    (0, typeorm_1.ManyToOne)(() => user_1.User, user => user.roles),
-    (0, typeorm_2.JoinColumn)({
-        name: "userId"
-    }),
-    __metadata("design:type", user_1.User)
-], Role.prototype, "user", void 0);
 exports.Role = Role = __decorate([
     (0, typeorm_1.Entity)({
         name: "ROLES"

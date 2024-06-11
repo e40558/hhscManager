@@ -7,7 +7,7 @@ const authorization_middleware_1 = require("../middleware/authorization.middlewa
 const _ = require("lodash");
 const router = (0, express_1.Router)();
 //const userController = new UserController();
-router.get('/', authentication_middleware_1.checkIfAuthenticated, _.partial(authorization_middleware_1.checkIfAuthorized, ['STUDENT']), lesson_1.getAllLessons);
+router.get('/', authentication_middleware_1.checkIfAuthenticated, _.partial(authorization_middleware_1.checkIfAuthorized, ['ADMIN']), lesson_1.getAllLessons);
 router.get('/:id', lesson_1.getLessonById);
 router.post('/', lesson_1.addLesson);
 router.patch('/', lesson_1.updateLesson);

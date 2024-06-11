@@ -1147,22 +1147,7 @@ export const USERS: any = {
         passwordDigest: '$argon2i$v=19$m=4096,t=3,p=1$vfrhde0OMBNSSE9rRWtVrQ$gBaNgJFPBZfzuvrzfX8iSr2+OCD8K8Iu/JjwpYp8/TY',
         firstName:"andre",
         lastName:"mccaskill",
-        roles: [
-
-            {
-                id: 131,
-                name: "ADMIN",               
-            },
-            {
-                id: 131,
-                name: "DIRECTCARE",               
-            },
-            {
-                id: 131,
-                name: "NURSE",               
-            }
-        ]
-      
+        roles: [ "STUDENT"]    
     },
     2: {
         id: 2,
@@ -1171,18 +1156,7 @@ export const USERS: any = {
         lastName:"mccaskill",
         // normal user (password is Password10), does not have access to login as another user functionality
         passwordDigest: '$argon2i$v=19$m=4096,t=3,p=1$vfrhde0OMBNSSE9rRWtVrQ$gBaNgJFPBZfzuvrzfX8iSr2+OCD8K8Iu/JjwpYp8/TY',
-        roles: [{
-            id: 131,
-            name: "ADMIN",               
-        },
-        {
-            id: 131,
-            name: "DIRECTCARE",               
-        },
-        {
-            id: 131,
-            name: "NURSE",               
-        }]
+        roles: [ "ADMIN", "STUDENT"]
     }
 
 };

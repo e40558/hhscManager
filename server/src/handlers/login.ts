@@ -61,7 +61,7 @@ async function loginAndBuildResponse(credentials:any, user:User,  res: Response)
 
         res.cookie("XSRF-TOKEN", csrfToken);
 
-        res.status(200).json({id:user.id, email:user.email});
+        res.status(200).json(user);
 
     }
     catch(err) {

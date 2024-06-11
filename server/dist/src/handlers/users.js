@@ -40,11 +40,13 @@ exports.getUsers = getUsers;
 function getUser(request, response, next) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
+            const userInfo = request["user"];
             const user = yield data_source_1.AppDataSource
                 .getRepository(user_1.User)
-                .findOneBy({
-                id: request["userId"]
-            });
+                .createQueryBuilder("users")
+                .leftJoinAndSelect("users.roles", "ROLE")
+                .where("users.id= :id", { id: userInfo.sub })
+                .getOne();
             if (user) {
                 response.status(200).json({ email: user.email, id: user.id });
             }

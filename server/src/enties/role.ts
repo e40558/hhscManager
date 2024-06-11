@@ -16,11 +16,5 @@ export class Role extends BaseEntity {
     name:string;
     
 
-    @ManyToOne(() => User, user => user.roles)
-    @JoinColumn({
-        name: "userId"
-    })
-    user: User;
-
    
 }

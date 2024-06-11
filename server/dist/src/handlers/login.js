@@ -21,6 +21,7 @@ function login(req, res, next) {
         try {
             logger_1.logger.debug(`Called findUserByEmail()`);
             const credentials = req.body;
+            console.log(credentials);
             const user = yield data_source_1.AppDataSource
                 .getRepository(user_1.User)
                 .findOneBy({

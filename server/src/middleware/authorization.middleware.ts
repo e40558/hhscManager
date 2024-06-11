@@ -9,8 +9,9 @@ export function checkIfAuthorized(
 
 
     const userInfo = req['user'];
-
+  
     const roles = _.intersection(userInfo.roles, allowedRoles);
+    console.log(roles)
 
     if (roles.length > 0) {
         next();

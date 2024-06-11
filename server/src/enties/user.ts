@@ -1,6 +1,5 @@
 import {BaseEntity, Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn} from "typeorm";
 import { Role } from "./role";
-import { Lesson } from "./lesson";
 
 
 @Entity({
@@ -21,13 +20,11 @@ export class User extends BaseEntity{
     @Column()
     lastName:string;
 
+    @Column("text", { array: true })
+    roles: string[];
     
 
-    @OneToMany(() => Role, role => role.user,{
-       cascade:true,     
-       eager:true
-    })
-    roles: Role[];
+
     
     @Column()
     passwordDigest:string;

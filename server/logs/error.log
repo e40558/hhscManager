@@ -488,3 +488,15 @@
     "level": "error",
     "message": "User with email admin@gmail.com already exists, aborting."
 }
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}

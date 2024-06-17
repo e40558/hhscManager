@@ -44,11 +44,10 @@ function getUser(request, response, next) {
             const user = yield data_source_1.AppDataSource
                 .getRepository(user_1.User)
                 .createQueryBuilder("users")
-                .leftJoinAndSelect("users.roles", "ROLE")
                 .where("users.id= :id", { id: userInfo.sub })
                 .getOne();
             if (user) {
-                response.status(200).json({ email: user.email, id: user.id });
+                response.status(200).json(user);
             }
             else {
                 response.set(204);

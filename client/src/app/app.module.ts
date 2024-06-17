@@ -4,14 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from './reducers';
+import { reducers } from './reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AuthService } from './service/auth.service';
 import { HttpClientModule, HttpClientXsrfModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatMenuModule} from '@angular/material/menu';
@@ -28,18 +25,16 @@ import { LessonsService } from './service/lessons.service';
 import { AdminComponent } from './admin/admin.component';
 import { RbacAllowDirective } from './common/rbac-allow.directive';
 import { Router } from '@angular/router';
-import { AuthorizationGuard } from './service/auth.guard';
+import { AuthModule } from './auth/auth.module';
+import { AuthService } from './auth/service/auth.service';
+import { AuthGuard } from './auth/service/auth.guard';
 
 
 
-export function createAdminOnlyGuard(authService:AuthService, router:Router) {
-  return new AuthorizationGuard(['ADMIN'], authService, router);
-}
+
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    SignupComponent,
     HomeComponent,
     AboutComponent,
     LocationComponent,
@@ -49,6 +44,7 @@ export function createAdminOnlyGuard(authService:AuthService, router:Router) {
   ],
   imports: [
     BrowserModule,
+    AuthModule.forRoot(),
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientXsrfModule.withOptions({
@@ -62,25 +58,17 @@ export function createAdminOnlyGuard(authService:AuthService, router:Router) {
     MatMenuModule,
     MatIconModule,
     HttpClientModule,
-    StoreModule.forRoot(reducers, {
-      metaReducers
-    }),
+    
+    StoreModule.forRoot(reducers),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     EffectsModule.forRoot([]),
     BrowserAnimationsModule,
     FontAwesomeModule
   ],
-  providers: [LessonsService,
-    AuthService,
-    {
-        provide: 'adminsOnlyGuard',
-        useFactory: (authService:AuthService,
-                     router:Router) =>
-            new AuthorizationGuard(['ADMIN'], authService, router),
-        deps: [
-          AuthService,Router
-        ]
-     }
+  providers: [
+    LessonsService,
+    AuthService
+    
  ],
               
   bootstrap: [AppComponent]

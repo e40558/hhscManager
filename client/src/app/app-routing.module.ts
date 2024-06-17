@@ -2,39 +2,43 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
 import { LessonsComponent } from './lessons/lessons.component';
 import { AdminComponent } from './admin/admin.component';
+import { AuthGuard } from './auth/service/auth.guard';
 
 const routes: Routes = [
-  {
-    path: "",
-    component: LessonsComponent
 
-},
 {
-  path:"login",
-  component: LoginComponent
+    path: 'courses',
+    loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule),
+    canActivate: [AuthGuard]
+ },
+ {
+  path: 'reslogs',
+  loadChildren: () => import('./res-log/res-log.module').then(m => m.ResLogModule),
+  canActivate: [AuthGuard]
 },
+
 {
     path: "about",
     component: AboutComponent
 },
 {
-  path:"signup",
-  component: SignupComponent
-
-},
-{
   path:"lessons",
-  component: LessonsComponent
+  component: LessonsComponent,
+  canActivate: [AuthGuard],
+  data: {
+    role: 'STUDENT'
+  }
 
 },
 {
   path: 'admin',
   component: AdminComponent,
-  canActivate: ["adminsOnlyGuard"]
+  canActivate: ["adminsOnlyGuard"],
+  data: {
+    role: 'ADMIN'
+  }
 },
 
 

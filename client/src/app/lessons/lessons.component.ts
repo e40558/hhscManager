@@ -3,8 +3,8 @@ import {of as observableOf, Observable} from 'rxjs';
 import {catchError, tap} from 'rxjs/operators';
 import {Component, OnInit} from '@angular/core';
 import {Lesson} from "../model/lesson";
-import { AuthService } from '../service/auth.service';
 import { LessonsService } from '../service/lessons.service';
+import { AuthService } from '../auth/service/auth.service';
 
 @Component({
     selector: 'lessons',

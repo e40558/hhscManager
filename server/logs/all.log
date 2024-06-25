@@ -4269,3 +4269,107 @@
     "level": "debug",
     "message": "Called findUserByEmail()"
 }
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called createUser()"
+}
+{
+    "level": "info",
+    "message": null
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}

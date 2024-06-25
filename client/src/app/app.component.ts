@@ -7,7 +7,7 @@ import { AuthState } from './auth/reducers';
 import { Store, select } from '@ngrx/store';
 import { AppState } from './reducers';
 import { isLoggedIn, isLoggedOut } from './auth/auth.selectors';
-import { logout } from './auth/auth.actions';
+import { login, logout } from './auth/auth.actions';
 
 @Component({
   selector: 'app-root',
@@ -37,6 +37,13 @@ export class AppComponent  implements OnInit {
        // this.user$ = this.authService.user$;
 
        //this.store.subscribe(state => console.log("store value", state));
+
+
+       const userProfile = localStorage.getItem("user");
+
+       if (userProfile) {
+           this.store.dispatch(login({user: JSON.parse(userProfile)}));
+       }
 
        this.isLoggedIn$ = this.store 
                 .pipe(

@@ -9,8 +9,12 @@ import {
 } from '@ngrx/store';
 import { environment } from 'src/environments/environment.production';
 
-export interface AppState {
 
+export const initailState = {
+  counter: 0,
+};
+export interface AppState {
+  
 }
 
 export const reducers: ActionReducerMap<AppState> = {

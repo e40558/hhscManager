@@ -19,7 +19,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule} from '@angular/material/button'
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { LocationComponent } from './location/location.component';
 import { LessonsComponent } from './lessons/lessons.component';
 import { LessonsService } from './service/lessons.service';
 import { AdminComponent } from './admin/admin.component';
@@ -39,7 +38,6 @@ import { RouterState, StoreRouterConnectingModule } from '@ngrx/router-store';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    LocationComponent,
     LessonsComponent,
     AdminComponent,
     RbacAllowDirective

@@ -1,8 +1,9 @@
 import {Injectable} from '@angular/core';
 import {Actions, createEffect, ofType} from '@ngrx/effects';
-import {tap} from 'rxjs/operators';
+import {catchError, tap} from 'rxjs/operators';
 import {Router} from '@angular/router';
 import { AuthActions } from '../actions.types';
+import { of } from 'rxjs';
 
 
 @Injectable()
@@ -13,9 +14,9 @@ export class AuthEffects {
             .pipe(
                 ofType(AuthActions.login),
                 tap(action => localStorage.setItem('user',
-                        JSON.stringify(action.user))
-                )
-            )
+                        JSON.stringify(action.user))                       
+                ))
+                            
     ,
     {dispatch: false});
 

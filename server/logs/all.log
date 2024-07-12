@@ -4373,3 +4373,181 @@
     "level": "info",
     "message": "The datasource has been initialized successfully."
 }
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "exp": 1719373196,
+    "iat": 1719372956,
+    "level": "debug",
+    "message": "Called getAllCourses()",
+    "roles": [
+        "ADMIN"
+    ],
+    "sub": "2"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "exp": 1719430637,
+    "iat": 1719430397,
+    "level": "debug",
+    "message": "Called getAllCourses()",
+    "roles": [
+        "ADMIN"
+    ],
+    "sub": "2"
+}
+{
+    "exp": 1719430637,
+    "iat": 1719430397,
+    "level": "debug",
+    "message": "Called getAllCourses()",
+    "roles": [
+        "ADMIN"
+    ],
+    "sub": "2"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "exp": 1719433632,
+    "iat": 1719433392,
+    "level": "debug",
+    "message": "Called getAllCourses()",
+    "roles": [
+        "ADMIN"
+    ],
+    "sub": "2"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "exp": 1719458062,
+    "iat": 1719457822,
+    "level": "debug",
+    "message": "Called getAllCourses()",
+    "roles": [
+        "ADMIN"
+    ],
+    "sub": "2"
+}
+{
+    "exp": 1719458062,
+    "iat": 1719457822,
+    "level": "debug",
+    "message": "Called getAllCourses()",
+    "roles": [
+        "ADMIN"
+    ],
+    "sub": "2"
+}
+{
+    "level": "debug",
+    "message": "Called findUserByEmail()"
+}
+{
+    "exp": 1719458456,
+    "iat": 1719458216,
+    "level": "debug",
+    "message": "Called getAllCourses()",
+    "roles": [
+        "ADMIN"
+    ],
+    "sub": "2"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called getAllCourses()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}

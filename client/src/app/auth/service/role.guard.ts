@@ -14,7 +14,6 @@ export const roleGuard: CanActivateFn = (route, state) => {
 
 const allowedRoles = route.data['roles'];
 
-console.log("roles", allowedRoles)
 const router = inject(Router);
 const authService = inject(AuthService);   
       

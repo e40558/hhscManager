@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
 import { LessonsComponent } from './lessons/lessons.component';
 import { AdminComponent } from './admin/admin.component';
 import { AuthGuard } from './auth/service/auth.guard';
 import { roleGuard } from './auth/service/role.guard';
 
 const routes: Routes = [
+
+  {
+    path: 'locations',
+    loadChildren: () => import('./locations/locations.module').then(m => m.LocationsModule),
+    
+ },
 
 {
     path: 'courses',

@@ -54,7 +54,7 @@ function setupExpress() {
     app.use(cookieParser());
     app.use(bodyParser.json());
     app.use(retrieveUserIdFromRequest)
-    app.use('/api', apiRoutes);  
+    app.use('/api', checkIfAuthenticated, apiRoutes);  
       
   
 

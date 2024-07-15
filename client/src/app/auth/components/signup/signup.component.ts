@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { error } from 'winston';
+//import { error } from 'winston';
 import { AuthService } from '../../service/auth.service';
 
 @Component({

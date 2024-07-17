@@ -9,7 +9,7 @@ import {
   MetaReducer,
   on
 } from '@ngrx/store';
-import { LocationeActions } from '../action.types';
+import { LocationActions } from '../location.action.types';
 import { compareLocations, Location } from '../../model/location.model';
 
 export const locationsFeatureKey = 'locations';
@@ -27,7 +27,7 @@ export const initialLocationState = adapter.getInitialState()
 
 export const locationsReducers =  createReducer (
   initialLocationState,
-  on(LocationeActions.allLocationsLoaded, (state, action) =>
+  on(LocationActions.allLocationsLoaded, (state, action) =>
     adapter.addMany(action.locations,
                     {...state ,allCoursesLoaded:true}) )
 

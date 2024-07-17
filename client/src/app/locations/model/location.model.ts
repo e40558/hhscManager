@@ -1,14 +1,14 @@
 export interface Location {
     id: number;
     seqNo:number;
-    url:string;
+    name:string;
     iconUrl: string;
-    courseListIcon: string;
-    description: string;
-    longDescription?: string;
-    category: string;
-    lessonsCount: number;
-    promo: boolean;
+    phoneNum: string;
+    city: string;
+    zip?: string;
+    address: string;
+    state: number;
+   
   }
   
   

@@ -1,0 +1,42 @@
+:host {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .add-button {
+    width:50px;
+    padding: 5px;
+  }
+
+  .control-buttons{
+    margin-bottom: var(--spacinbg-step);
+    display:flex;
+    justify-content: end;
+  }
+
+  .control-container{
+    display:flex;
+    align-items:center;
+  }
+
+  .remove-button{
+    width: 50px;
+    margin:0 0 0 10px;
+    background-color: transparent;
+    border-color: #fb0505;
+    color: #fb0505;
+  }
+
+  .phone-label-dropdown{
+    margin-right: 5px;
+    width: 110px;
+  }
+  .skill-container{
+    display: flex;
+    align-items: center;
+  }

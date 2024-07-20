@@ -9,14 +9,14 @@ import {Location} from "src/app/locations/model/location.model"
 @Injectable()
 export class LocationsHttpService {
 
-    
+    workingLocation: Location;
 
     constructor(private http:HttpClient) {
 
     }
 
     findAllLocations(): Observable<Location[]> {
-        return this.http.get<any>('http://localhost:9000/api/locations')
+        return this.http.get<any>('/api/locations')
             .pipe(
                 map(res => Object.values(res['locations']))     
             );
@@ -27,8 +27,12 @@ export class LocationsHttpService {
     }
 
     findLocationById(locationId: number): Observable<Location> {
-        return this.http.get<Location>(`http://localhost:9000/api/locations/${locationId}`);
+        return this.http.get<Location>(`/api/locations/${locationId}`);
     }
+
+    
+
+   
 
    // findLessons(
    //     courseId:number,
@@ -45,12 +49,24 @@ export class LocationsHttpService {
 
 
     saveLocation( changes: Partial<Location>): Observable<Location> {
-        return this.http.post<Location>('http://localhost:9000/api/locatioins/' , changes);
+       
+        return this.http.post<Location>('/api/locations/' , changes);
     }
 
     updateLocation(locationId: string | number, changes: Partial<Location>) {
-        return this.http.patch('http://localhost:9000/api/locations/' + locationId, changes);
+        return this.http.patch('/api/locations/' + locationId, changes);
     }
 
 
+    deleteLocation(locationId: string | number) {
+        return this.http.delete('/api/locations/' + locationId);
+    }
+
+
+    
+
+    setWorkingLocation(location : Location) {
+        this.workingLocation = location
+ 
+     }
 }

@@ -9,10 +9,6 @@ export async function getAllLessons(
     request: Request, response: Response, next:NextFunction) {
 
     try {
-
-       
-
-    
             const lessons = await AppDataSource
             .getRepository(Lesson)
             .createQueryBuilder("lessons")

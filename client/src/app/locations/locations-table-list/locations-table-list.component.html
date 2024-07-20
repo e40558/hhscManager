@@ -1,1 +1,27 @@
-<p>locations-table-list works!</p>
+<table class="table table-striped" >
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let location of locations" >
+        <td>{{ location.id }}</td>
+        <td style="word-break: break-all">{{ location.name }}</td>
+        <td style="word-break: break-all">{{ location.address }}</td>
+        <td>
+          <button class="btn btn-danger" class="btn btn-primary" (click)="onUpdateLocation(location)" >Update </button>&nbsp;
+          <button class="btn btn-danger" (click)="onDeleteLocation(location.id)">
+            Delete</button
+          >&nbsp;
+          <a href="" class="btn btn-info" [routerLink]="['details', location.id]"
+            >Details
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>

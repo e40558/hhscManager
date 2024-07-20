@@ -2,13 +2,16 @@
   <div class="header">
     <h2 class="title">All Locations</h2>
 
-    <button mat-mini-fab>
-      <mat-icon class="add-location-btn" (click)="onAddLocation()"
-        >add</mat-icon
-      >
+    <button mat-mini-fab  [routerLink]="['/locations/addLocation']">
+      <mat-icon class="add-location-btn" >add</mat-icon   >
     </button>
   </div>
 
-  <locations-card-list> </locations-card-list>
-  <locations-table-list> </locations-table-list>
+  <div *ngIf="allLocations$ | async as locations">
+    <locations-table-list [locations]="locations"> </locations-table-list>
+  
+  </div>
+
+
+  
 </div>

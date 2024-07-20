@@ -29,6 +29,7 @@ import { AuthService } from './auth/service/auth.service';
 import { AuthGuard } from './auth/service/auth.guard';
 import { AuthEffects } from './auth/service/auth.effects';
 import { RouterState, StoreRouterConnectingModule } from '@ngrx/router-store';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 
 
@@ -57,6 +58,8 @@ import { RouterState, StoreRouterConnectingModule } from '@ngrx/router-store';
     MatSidenavModule,
     MatMenuModule,
     MatIconModule,
+    MatProgressSpinnerModule,
+
     HttpClientModule,
     
     StoreModule.forRoot(reducers, {

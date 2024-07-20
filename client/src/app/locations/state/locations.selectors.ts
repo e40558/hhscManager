@@ -1,10 +1,11 @@
 
 import {createFeatureSelector, createSelector} from '@ngrx/store';
-import { LocationsState } from './reducers/locations.reducer';
-import * as fromLocations from '../state/reducers/locations.reducer';
+import { LocationsState } from './reducers';
+import * as fromLocations from './reducers/index';
+
 
 export const selectLocationsState =
- createFeatureSelector<LocationsState>("courses");
+ createFeatureSelector<LocationsState>("locations");
 
  export const selectAllLocations = createSelector(
     selectLocationsState,
@@ -31,7 +32,7 @@ export const selectLocationsState =
  )
 
 
- export const isLoading = createSelector(
-   selectLocationsState,
-   state => state.isLoading
- )
+ //export const isLoading = createSelector(
+ //  selectLocationsState,
+ //  state => state.isLoading
+ //)

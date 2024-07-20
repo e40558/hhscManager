@@ -16,20 +16,27 @@ export class Location extends BaseEntity {
     @Column()
     seqNo:number;
 
+   
     @Column()
-    url:string;
+    name:string;
 
     @Column()
-    title:string;
+    iconUrl?:string;
 
     @Column()
-    iconUrl:string;
+    phoneNum:string;
 
     @Column()
-    longDescription:string;
+    city: string;
 
     @Column()
-    category: string;
+    zip: string;
+
+    @Column()
+    address: string;
+
+    @Column()
+    state: string;
 
     @OneToMany(() => Lesson, lesson => lesson.course)
     lessons: Lesson[];

@@ -7,6 +7,6 @@ const router = (0, express_1.Router)();
 router.get('/', locations_1.getAllLocations);
 router.get('/:id', locations_1.getLocationById);
 router.post('/', locations_1.addLocation);
-router.patch('/', locations_1.updateLocation);
+router.patch('/:id', locations_1.updateLocation);
 router.delete('/:id', locations_1.deleteLocation);
 exports.default = router;

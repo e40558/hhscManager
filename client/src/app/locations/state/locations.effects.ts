@@ -1,14 +1,14 @@
 import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 
-import { catchError, concatMap, map, mergeMap, of } from "rxjs";
+import { catchError, concatMap, map, mergeMap, of, tap } from "rxjs";
 import { LocationsHttpService } from "../services/locationsHttpService";
 import { LocationActions } from "./location.action.types";
-import { locationLoaded, allLocationsLoaded } from "./locations.actions";
+import { locationLoaded, allLocationsLoaded,  } from "./locations.actions";
 
 
 @Injectable()
-export class CoursesEffects{
+export class LocationsEffects{
 
     constructor(private actions$: Actions, 
         private locationsHttpService: LocationsHttpService){
@@ -29,10 +29,27 @@ loadLocation$ = createEffect(
                 ofType(LocationActions.loadAllLocations),
                 concatMap(action =>
                     this.locationsHttpService.findAllLocations()),
-                map(locations => allLocationsLoaded({locations})
+                   map(locations => allLocationsLoaded({locations})
                 )
 
     ));
+
+
+    AddLocation$ = createEffect(
+        () => this.actions$
+           .pipe(
+            ofType(LocationActions.addLocation),
+            concatMap(action =>
+                 this.locationsHttpService.saveLocation(action.location)),
+                  
+                    map(location => LocationActions.locationAddSuccess({location}) ), 
+                 
+                   
+                    catchError((error)=>
+                      of(LocationActions.locationAddedFailure({error:error}))
+                      )
+                 ),  
+            {dispatch:false});
 
     UdateLocation$ = createEffect(
         () => this.actions$
@@ -49,25 +66,26 @@ loadLocation$ = createEffect(
 
            );
 
-    AddCourse$ = createEffect(
-        () => this.actions$
-           .pipe(
-            ofType(LocationActions.addLocationSuccess),
-            concatMap(action =>
-                 this.locationsHttpService.saveLocation(action.location).pipe(
-                    map((location)=> 
-                        LocationActions.addLocationSuccess({ location:location})
-                    ),
-                    catchError((error)=>
-                      of(LocationActions.locationAddedFailure({error:error}))
-                      )
-                 )
-                 
-                 ),
-            ),
-            {dispatch:false});
-
    
+
+
+
+            deleteLocation$ = createEffect(
+                () => this.actions$
+                   .pipe(
+                    ofType(LocationActions.locationDeletedSuccess),
+                    concatMap(action => 
+                        this.locationsHttpService.deleteLocation(
+                        action.id
+                      
+                    )),catchError((error)=>
+                       of(LocationActions.locationUpdatedFailure({error:error})))
+                    ),
+                    {dispatch:false}
+        
+                   );
+
+           
     
 
             

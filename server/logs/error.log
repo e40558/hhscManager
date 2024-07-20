@@ -508,3 +508,61 @@
     "level": "error",
     "message": "Error calling findUserByEmail()"
 }
+{
+    "level": "error",
+    "message": "Error calling createCourse()"
+}
+{
+    "level": "error",
+    "message": "Error calling findCourseByUrl()"
+}
+{
+    "level": "error",
+    "message": "Error calling createCourse()"
+}
+{
+    "level": "error",
+    "message": "Error calling createCourse()"
+}
+{
+    "level": "error",
+    "message": "Error calling createCourse()"
+}
+{
+    "level": "error",
+    "message": "Error calling updateLocaton()"
+}
+{
+    "level": "error",
+    "message": "Error calling updateLocaton()"
+}
+{
+    "level": "error",
+    "message": "Error calling updateLocaton()"
+}
+{
+    "level": "error",
+    "message": "Error calling updateLocaton()"
+}
+{
+    "level": "error",
+    "message": "Error calling updateLocaton()"
+}
+{
+    "level": "error",
+    "message": "Error calling deleteLocation()"
+}
+{
+    "level": "error",
+    "message": "Error calling deleteLocation()"
+}
+{
+    "level": "error",
+    "message": "Error calling deleteLocation()"
+}
+{
+    "code": "ECONNREFUSED",
+    "level": "error",
+    "message": "Error during datasource initialization.",
+    "stack": "AggregateError\n    at internalConnectMultiple (node:net:1114:18)\n    at afterConnectMultiple (node:net:1667:5)"
+}

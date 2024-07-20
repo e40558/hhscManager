@@ -15,13 +15,13 @@ export const loadAllLocations = createAction(
 );
 
 export const allLocationsLoaded = createAction(
-    "[Load Locations Effect] All Courses Loaded",
+    "[Load Locations Effect] All Locations Loaded",
     props<{ locations: Location[] }>()
 );
 
 
 export const loadLocation = createAction(
-    '[View Location Page] Course Requested',
+    '[View Location Page] Location Requested',
     props<{ locationId: number }>()
 );
 
@@ -34,8 +34,12 @@ export const locationLoaded = createAction(
 
 
 
-export const addLocationSuccess = createAction(
-    '[Location/API] Add Course',
+export const addLocation = createAction(
+    '[Location/API] Add Locations',
+    props<{ location: Location }>());
+
+export const locationAddSuccess = createAction(
+    '[Location/API] Add Location Success',
     props<{ location: Location }>());
 
 export const locationAddedFailure = createAction(
@@ -59,17 +63,9 @@ export const locationLoadedSuccess = createAction(
 )
 
 
-export const locationAddedSucess = createAction(
-    '[Location Api] Location Added Success',
-    props<{ location: Location }>()
-)
-
-
-
-
-export const locationDeletedSucess = createAction(
+export const locationDeletedSuccess = createAction(
     '[Location Api] Location Deleted Success',
-    props<{ location: Location }>()
+    props<{ id: number }>()
 )
 
 

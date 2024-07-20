@@ -1,1 +1,46 @@
-<p>edit-location works!</p>
+<div class="row my-4">
+  <div class="col-md-12">
+    <h3>Edit Location</h3>
+    <hr />
+    <form [formGroup]="locationForm" (ngSubmit)="onUpdateLocation()">
+      <div class="mb-3">
+        <label>Name</label>
+        <input type="text" class="form-control" formControlName="name" />
+      </div>
+      <div class="mb-3">
+        <label> phoneNum</label>
+        <input type="text" class="form-control" formControlName="phoneNum" />
+      </div>
+
+      <div class="mb-3">
+        <label> city</label>
+        <input type="text" class="form-control" formControlName="city" />
+      </div>
+
+      <div class="mb-3">
+        <label>Zip</label>
+        <input type="text" class="form-control" formControlName="zip" />
+      </div>
+
+      <div class="mb-3">
+        <label>Address</label>
+        <input type="text" class="form-control" formControlName="address" />
+      </div>
+
+      <div class="mb-3">
+        <label>State</label>
+        <input type="text" class="form-control" formControlName="state" />
+      </div>
+
+      <div class="my-3">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="!locationForm.valid"
+        >
+          Edit Location
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

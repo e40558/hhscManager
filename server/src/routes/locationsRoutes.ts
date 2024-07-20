@@ -10,7 +10,7 @@ const router= Router();
 router.get('/', getAllLocations);
 router.get('/:id',getLocationById);
 router.post('/', addLocation);
-router.patch('/', updateLocation);
+router.patch('/:id', updateLocation);
 router.delete('/:id', deleteLocation)
 
 

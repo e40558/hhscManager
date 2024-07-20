@@ -47,6 +47,8 @@ const routes: Routes = [
   }
 },
 
+  { path: 'singleLocation', loadChildren: () => import('./locations/single-location/single-location.module').then(m => m.SingleLocationModule) },
+
 
 {
     path: "**",

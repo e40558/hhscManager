@@ -4,7 +4,8 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { AppState } from 'src/app/reducers';
 import { Location } from '../model/location.model';
-import { addLocationSuccess } from '../state/locations.actions';
+import { addLocation } from '../state/locations.actions';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'add-location',
@@ -16,7 +17,7 @@ export class AddLocationComponent {
 
   location: Location;
 
-  constructor(private store: Store<AppState>) {}
+  constructor(private store: Store<AppState>, private router:Router) {}
 
   ngOnInit(): void {
     this.locationForm = new FormGroup({
@@ -28,6 +29,13 @@ export class AddLocationComponent {
      //   Validators.required,
         
       ]),
+      iconUrl: new FormControl("", [
+        //   Validators.required,
+           
+         ]),
+
+
+      
       city: new FormControl(null, [
       //  Validators.required,        
       ]),
@@ -72,8 +80,10 @@ return  ""
       ...this.location,
       ...this.locationForm.value
     };
-    console.log(location);
-   // this.store.dispatch(addLocationSuccess({ location }));
-  }
 
+    this.store.dispatch(addLocation({ location }));
+
+    this.router.navigate(['locations'])
+
+  }
 }

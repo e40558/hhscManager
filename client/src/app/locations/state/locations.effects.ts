@@ -4,7 +4,7 @@ import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { catchError, concatMap, map, mergeMap, of, tap } from "rxjs";
 import { LocationsHttpService } from "../services/locationsHttpService";
 import { LocationActions } from "./location.action.types";
-import { locationLoaded, allLocationsLoaded,  } from "./locations.actions";
+import { locationLoaded, allLocationsLoaded, locationDeletedSuccess,  } from "./locations.actions";
 
 
 @Injectable()
@@ -40,16 +40,13 @@ loadLocation$ = createEffect(
            .pipe(
             ofType(LocationActions.addLocation),
             concatMap(action =>
-                 this.locationsHttpService.saveLocation(action.location)),
-                  
-                    map(location => LocationActions.locationAddSuccess({location}) ), 
-                 
+                 this.locationsHttpService.saveLocation(action.location)),                  
+                   map(location => LocationActions.locationAddSuccess({location}) ),                
                    
                     catchError((error)=>
                       of(LocationActions.locationAddedFailure({error:error}))
                       )
-                 ),  
-            {dispatch:false});
+                 ));
 
     UdateLocation$ = createEffect(
         () => this.actions$
@@ -73,12 +70,16 @@ loadLocation$ = createEffect(
             deleteLocation$ = createEffect(
                 () => this.actions$
                    .pipe(
-                    ofType(LocationActions.locationDeletedSuccess),
+                    ofType(LocationActions.deleteLocation),
                     concatMap(action => 
                         this.locationsHttpService.deleteLocation(
-                        action.id
-                      
-                    )),catchError((error)=>
+                        action.id ).pipe(
+                            map((data) => {
+                                return locationDeletedSuccess({ id: action.id });
+                              })
+                            
+                        )
+                    ),catchError((error)=>
                        of(LocationActions.locationUpdatedFailure({error:error})))
                     ),
                     {dispatch:false}

@@ -1,1 +1,22 @@
-<p>locations-card-list works!</p>
+
+
+<div *ngFor="let location of locations" >
+<hhcs-card 
+ [headerTemplate]="altHeader"
+ [contentTemplate]="altContent"></hhcs-card>
+
+
+
+<ng-template #altHeader>
+    <div>Today's weather</div>
+</ng-template>
+
+<ng-template #altContent let-state>
+    <div>
+        <span>{{location.name}}</span>
+    </div>  
+</ng-template>
+</div>
+
+
+

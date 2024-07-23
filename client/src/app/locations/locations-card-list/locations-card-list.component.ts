@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+import { Location } from '../model/location.model';
 
 @Component({
   selector: 'locations-card-list',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./locations-card-list.component.scss']
 })
 export class LocationsCardListComponent {
+
+  @Input()
+  locations: Location[] =[];
 
 }

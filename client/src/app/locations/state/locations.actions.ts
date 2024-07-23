@@ -35,7 +35,7 @@ export const locationLoaded = createAction(
 
 
 export const addLocation = createAction(
-    '[Location/API] Add Locations',
+    '[Location Add Component] Add Locations',
     props<{ location: Location }>());
 
 export const locationAddSuccess = createAction(
@@ -61,6 +61,12 @@ export const locationLoadedSuccess = createAction(
     '[Location Resolver] Location Loaded Success',
     props<{ location: Location[] }>()
 )
+
+export const deleteLocation = createAction(
+    '[Location Table List] Delete Location',
+    props<{ id: number }>()
+)
+
 
 
 export const locationDeletedSuccess = createAction(

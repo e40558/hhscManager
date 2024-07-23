@@ -5,6 +5,7 @@ import { User } from "./enties/user";
 import { Location } from "./enties/location";
 import { Lesson } from "./enties/lesson";
 import { Role } from "./enties/role";
+import { Consumer } from "./enties/consumer";
 
 
 
@@ -21,6 +22,7 @@ export const AppDataSource = new DataSource({
         Course,
         User,
         Lesson,
+        Consumer,
         Location,
         User,
         Role   

@@ -5689,3 +5689,615 @@
     "level": "debug",
     "message": "Called createLocation()"
 }
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called findCourseByUrl()"
+}
+{
+    "level": "error",
+    "message": "Could not find a course with url 75"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called findCourseByUrl()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called updateLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called deleteLocaton()"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called updateLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "debug",
+    "message": "Called updateLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called createLocation()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called getAllConsumer)"
+}
+{
+    "level": "error",
+    "message": "Error calling getAllConsumers()"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called getAllConsumer)"
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "info",
+    "message": "The datasource has been initialized successfully."
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}
+{
+    "level": "debug",
+    "message": "Called getAllLocation)"
+}

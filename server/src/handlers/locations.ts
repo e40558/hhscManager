@@ -120,7 +120,7 @@ export async function addLocation (request: Request,response: Response,next :Nex
         }
     );
 
-    response.status(200).json({location});
+    response.status(200).json(location);
 
 }
 catch(error) {

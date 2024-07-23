@@ -37,6 +37,9 @@ export const locationsReducers =  createReducer (
 on(LocationActions.locationUpdatedSucess, (state, action) =>
     adapter.updateOne(action.update, state)),
 
+on(LocationActions.locationDeletedSuccess, (state, action) =>
+  adapter.removeOne(action.id, state)),
+
 on(LocationActions.locationAddSuccess, (state, action) =>
   adapter.addOne(action.location, state)),
 

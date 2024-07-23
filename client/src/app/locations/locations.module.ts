@@ -18,7 +18,7 @@ import { LocationsHttpService } from './services/locationsHttpService';
   ],
   imports: [
     CommonModule,
-    LocationsRoutingModule,
+    LocationsRoutingModule,    
     ReactiveFormsModule,
     EffectsModule.forFeature([LocationsEffects]),
     StoreModule.forFeature("locations", locationsReducers) ]

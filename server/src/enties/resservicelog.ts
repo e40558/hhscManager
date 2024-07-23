@@ -12,31 +12,32 @@ export class Consumer extends BaseEntity {
     id:number;
    
     @Column()
-    first_name:string;    
+    name:string;    
    
     @Column()
-    last_name:string;
+    assisted:boolean;
     
-    @Column()
-    address:string;
-    
-    @Column()
-    phone:string;
 
+    @Column()
+    dateAssisted:string;
+    
+    @Column()
+    dayOFWeek:string;
+
+    @Column()
+    initial:string;
+    
+    @Column()
+    signature:string;
+    
     @Column()
     localCaseNum:string;
     
     @Column()
-    dob:string;
+    residentalType:string;
     
     @Column()
-    dateOfEnrollment:string;
-    
-    @Column()
-    levelOfNeed:string;
-    
-    @Column()
-    medicaidNum:string;
+    typeOfservice:string;
 
     @Column()
     seqNo: number;

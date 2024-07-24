@@ -574,3 +574,7 @@
     "level": "error",
     "message": "Error calling getAllConsumers()"
 }
+{
+    "level": "error",
+    "message": "Error calling findUserByEmail()"
+}

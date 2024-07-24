@@ -21,19 +21,27 @@ __decorate([
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], Consumer.prototype, "first_name", void 0);
+], Consumer.prototype, "name", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", Boolean)
+], Consumer.prototype, "assisted", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], Consumer.prototype, "last_name", void 0);
+], Consumer.prototype, "dateAssisted", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], Consumer.prototype, "address", void 0);
+], Consumer.prototype, "dayOFWeek", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], Consumer.prototype, "phone", void 0);
+], Consumer.prototype, "initial", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], Consumer.prototype, "signature", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
@@ -41,19 +49,11 @@ __decorate([
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], Consumer.prototype, "dob", void 0);
+], Consumer.prototype, "residentalType", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], Consumer.prototype, "dateOfEnrollment", void 0);
-__decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], Consumer.prototype, "levelOfNeed", void 0);
-__decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], Consumer.prototype, "medicaidNum", void 0);
+], Consumer.prototype, "typeOfservice", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", Number)

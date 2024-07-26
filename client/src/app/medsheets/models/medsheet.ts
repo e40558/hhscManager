@@ -1,12 +1,14 @@
-export interface medSheetItem{
-    id: number;    
-    linesPerItem:number;
+
+
+export interface DatesAdministered{
+    id: number;   
     medicationName:string;
-    frequency: Array<string>[];
-    doctorOrder: string;
+    doctorOrder: string;   
+    dateAdminister: string;
+    timeOfDayMedsGiven: string;
+    initial: string;
     month: string;
     day: string;
     year: string;
-    initial: string;
-    signiture: string;
+    weekNum: number;   
 }

@@ -1,463 +1,147 @@
 <div class="header">
-    <div class="consumerInfo">
-       Andre McCaskill
-    </div>
-    <div class="medsheet">
-      MEDICATION SHEET
-    </div>
+  <div class="consumerInfo">
+    Andre McCaskill
+  </div>
+  <div class="medsheet">
+    MEDICATION SHEET
+  </div>
 </div>
 
 <div class="content">
-    <table >
-        <tr>
-    
-          <th rowspan="5">Aripiprazole 20 Mg Tablet take 1/2 tablet by mouth at bed time for IRRITABILITY</th>
-          <td></td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>7</td>    
-          <td>8</td>    
-          <td>9</td>    
-          <td>10</td>    
-          <td>11</td>   
-          <td>12</td>    
-          <td>13</td>    
-          <td>14</td>
-          <td>15</td>
-          <td>16</td>
-          <td>17</td>
-          <td>18</td>
-          <td>19</td>
-          <td>20</td>
-          <td>21</td>    
-          <td>22</td>    
-          <td>23</td>    
-          <td>24</td>    
-          <td>25</td>   
-          <td>26</td>    
-          <td>27</td>    
-          <td>28</td>
-          <td>29</td>
-          <td>30</td>
-          <td>31</td>
-         
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>    
-          <td></td>    
-          <td></td>    
-          <td></td>    
-          <td></td>   
-          <td></td>    
-          <td></td>    
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>    
-          <td></td>    
-          <td></td>    
-          <td></td>    
-          <td></td>   
-          <td></td>    
-          <td></td>    
-          <td></td>
-          <td></td>
-          <td></td>
-         
-        </tr>
-        <tr>
-         <td>2pm</td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>    
-         <td></td>    
-         <td></td>    
-         <td><td>    
-         <td></td>   
-         <td></td>    
-         <td></td>    
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>    
-         <td></td>    
-         <td></td>    
-         <td></td>    
-         <td></td>   
-         <td></td>    
-         <td></td>    
-         <td></td>
-         <td></td>
-         <td></td>
-        
-        </tr>
-        <tr>
-            <td>8pm</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>   
-            <td></td>    
-            <td></td>   
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>   
-            <td></td>    
-            <td></td>    
-            <td></td>
-            <td></td>
-           
-            <td></td>
-           
-         
-        </tr>
-        <tr>
-            <td>8pm</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>   
-            <td></td>    
-            <td></td>   
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>   
-            <td></td>    
-            <td></td>    
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-           
-        </tr>
+  <table>
+     <ng-container *ngFor="let item of state.medSheetItem; let itemIndex = index" >
+    <tr>
+      <ng-container [ngTemplateOutlet]="altItemHeader || itemDefalultHeader"
+        [ngTemplateOutletContext]="{ $implicit: state }">
+      </ng-container>
+      <ng-template #itemDefalultHeader>
+        <th rowspan="7">{{item.doctorOrder}}</th>
+       
+        <ng-container *ngIf="itemIndex <= 0">
+        <td ></td>
+        <td  *ngFor="let n of state.daysInMonth; let myIndex  = index">{{myIndex + 1}}</td>
+      </ng-container>
+      </ng-template>
+    </tr>
 
 
-        <tr>
-    
-          <th rowspan="5">Aripiprazole 20 Mg Tablet take 1/2 tablet by mouth at bed time for IRRITABILITY</th>
-          <td></td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>7</td>    
-          <td>8</td>    
-          <td>9</td>    
-          <td>10</td>    
-          <td>11</td>   
-          <td>12</td>    
-          <td>13</td>    
-          <td>14</td>
-          <td>15</td>
-          <td>16</td>
-          <td>17</td>
-          <td>18</td>
-          <td>19</td>
-          <td>20</td>
-          <td>21</td>    
-          <td>22</td>    
-          <td>23</td>    
-          <td>24</td>    
-          <td>25</td>   
-          <td>26</td>    
-          <td>27</td>    
-          <td>28</td>
-          <td>29</td>
-          <td>30</td>
-          <td>31</td>
-         
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>    
-          <td></td>    
-          <td></td>    
-          <td></td>    
-          <td></td>   
-          <td></td>    
-          <td></td>    
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>    
-          <td></td>    
-          <td></td>    
-          <td></td>    
-          <td></td>   
-          <td></td>    
-          <td></td>    
-          <td></td>
-          <td></td>
-          <td></td>
-         
-        </tr>
-        <tr>
-         <td>2pm</td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>    
-         <td></td>    
-         <td></td>    
-         <td><td>    
-         <td></td>   
-         <td></td>    
-         <td></td>    
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>    
-         <td></td>    
-         <td></td>    
-         <td></td>    
-         <td></td>   
-         <td></td>    
-         <td></td>    
-         <td></td>
-         <td></td>
-         <td></td>
-        
-        </tr>
-        <tr>
-            <td>8pm</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>   
-            <td></td>    
-            <td></td>   
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>   
-            <td></td>    
-            <td></td>    
-            <td></td>
-            <td></td>
-           
-            <td></td>
-           
-         
-        </tr>
-        <tr>
-            <td>8pm</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>   
-            <td></td>    
-            <td></td>   
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>   
-            <td></td>    
-            <td></td>    
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-           
-        </tr>
-    </table>
 
-    
+    <ng-container [ngTemplateOutlet]="altItem || defaultItem" [ngTemplateOutletContext]="{ $implicit: state }">
+    </ng-container>
+    <ng-template #defaultItem>
+      <tr>
+      <tr *ngFor="let n of state.linesPerItem; ">
+        <td>8am</td>
+        <ng-container *ngFor="let n of state.daysInMonth; let myIndex = index">
+          <td></td>
+        </ng-container>
+      </tr>
+
+    </ng-template>
+
+
+
+
+
+
+  </ng-container>
+
+
+  </table>
+
+
 </div>
 <div class="spacer"></div>
 <div class="footer">
-    <div class="row">
-      <div class="row-item">
-        <div class="label">Charting Dates:</div>
-        <div class="data">6/13/2024    To      7/12/2024</div>
-      </div>
-
-     <div class="row-item">
-        <div class="label">Medication Tracking #</div>
-        <div class="data">12345678</div>
-      </div>
-   
-    </div>
-    <div class="row">
-      <div class="row-item">
-        <div class="label">Charting Dates:</div>
-        <div class="data">6/13/2024    To      7/12/2024</div>
-      </div>   
-    </div>
-    <div class="row">
-      <div class="row-item">
-        <div class="label">Charting Dates:</div>
-        <div class="data">6/13/2024    To      7/12/2024</div>
-      </div>   
-    </div>
-    <div class="row">
-      <div class="row-item">
-        <div class="label">physician.:</div>
-        <div class="data"></div>
-      </div>   
-    </div>
-    <div class="row">
-      <div class="row-item">
-        <div class="label">Allergies:</div>
-        <div class="data"></div>
-      </div>   
-    </div>
-    <div class="row">
-      <div class="row-item">
-        <div class="label">Diagnosis:</div>
-        <div class="data"></div>
-      </div>   
-    </div>
-    <div class="row">
-      <div class="row-item">
-        <div class="label">Medicaid #:</div>
-        <div class="data"></div>
-      </div>   
-      <div class="row-item">
-        <div class="label">Patient Rec#:</div>
-        <div class="data">345678</div>
-      </div>  
-      
+  <div class="row">
+    <div class="row-item">
+      <div class="label">Charting Dates:</div>
+      <div class="data">6/13/2024 To 7/12/2024</div>
     </div>
 
-    <div class="row">
-      <div class="row-item">
-        <div class="label">Medicare #:</div>
-        <div class="data"></div>
-      </div>   
-      <div class="row-item">
-        <div class="label">Room#:</div>
-        <div class="data">345678</div>
-      </div>  
-      
+    <div class="row-item">
+      <div class="label">Medication Tracking #</div>
+      <div class="data">12345678</div>
     </div>
 
-    
-    <div class="row">
-      <div class="row-item">
-        <div class="label">Patient:</div>
-        <div class="data">Andre MCaskill</div>
-      </div>   
-      <div class="row-item">
-        <div class="label">DOB:</div>
-        <div class="data">12/22/76</div>
-      </div>  
-      <div class="row-item">
-        <div class="label">Sex:</div>
-        <div class="data">Male</div>
-      </div> 
-      <div class="row-item">
-        <div class="label">Admitted On:</div>
-        <div class="data">25/23/20</div>
-      </div> 
-      <div class="row-item">
-        <div class="label">Room#:</div>
-        <div class="data">345678</div>
-      </div> 
-      
+  </div>
+  <div class="row">
+    <div class="row-item">
+      <div class="label">Charting Dates:</div>
+      <div class="data">6/13/2024 To 7/12/2024</div>
     </div>
-    <div class="row">two</div>
+  </div>
+  <div class="row">
+    <div class="row-item">
+      <div class="label">Charting Dates:</div>
+      <div class="data">6/13/2024 To 7/12/2024</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row-item">
+      <div class="label">physician.:</div>
+      <div class="data"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row-item">
+      <div class="label">Allergies:</div>
+      <div class="data"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row-item">
+      <div class="label">Diagnosis:</div>
+      <div class="data"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row-item">
+      <div class="label">Medicaid #:</div>
+      <div class="data"></div>
+    </div>
+    <div class="row-item">
+      <div class="label">Patient Rec#:</div>
+      <div class="data">345678</div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="row-item">
+      <div class="label">Medicare #:</div>
+      <div class="data"></div>
+    </div>
+    <div class="row-item">
+      <div class="label">Room#:</div>
+      <div class="data">345678</div>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="row-item">
+      <div class="label">Patient:</div>
+      <div class="data">Andre MCaskill</div>
+    </div>
+    <div class="row-item">
+      <div class="label">DOB:</div>
+      <div class="data">12/22/76</div>
+    </div>
+    <div class="row-item">
+      <div class="label">Sex:</div>
+      <div class="data">Male</div>
+    </div>
+    <div class="row-item">
+      <div class="label">Admitted On:</div>
+      <div class="data">25/23/20</div>
+    </div>
+    <div class="row-item">
+      <div class="label">Room#:</div>
+      <div class="data">345678</div>
+    </div>
+
+  </div>
+  <div class="row">two</div>
 </div>

@@ -1,7 +1,7 @@
 <div class="card">
   <div class="header">
     <ng-container
-      [ngTemplateOutlet]="headerTemplate || cardHeader"
+    [ngTemplateOutlet]="headerTemplate || cardHeader"
     ></ng-container>
     <ng-template #cardHeader>
       <div class="header-title">Andre Mccaskill</div>
@@ -9,12 +9,7 @@
     </ng-template>
   </div>
   <div class="card-content">
-    <ng-container [ngTemplateOutlet]="contentTemplate || defaultCardContent"
-                  [ngTemplateOutletContext]="{implicit : state}"></ng-container>
-    <ng-template #defaultCardContent>
-      <div class="hea>der-title">Andre Mccaskill</div>
-      <div class="header-sub-title">none</div>
-    </ng-template>
+   
   </div>
   <div class="card-action">
     <button (click)="actions.reload()">Reload</button>

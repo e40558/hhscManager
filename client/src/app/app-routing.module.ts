@@ -5,8 +5,13 @@ import { LessonsComponent } from './lessons/lessons.component';
 import { AdminComponent } from './admin/admin.component';
 import { AuthGuard } from './auth/service/auth.guard';
 import { roleGuard } from './auth/service/role.guard';
+import { TrackerComponent } from './tracker/tracker.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: TrackerComponent
+  },
 
   {
     path: 'locations',

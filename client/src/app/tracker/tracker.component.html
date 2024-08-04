@@ -1,0 +1,82 @@
+<div class="tracker-container">
+    <div class="tracker">
+        <div class="tracker-header">
+            <h1>Medications</h1>
+            
+        </div>
+        <div class="tracker-header-selector">
+            <div class="tracker-date">
+                <label for="start">Date:</label>
+                <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                    max="2018-12-31" />
+            </div>
+            <div class="tracker-hours">
+                <label for="cars"> Time:</label>
+                <select name="cars" id="cars">
+                    <option value="" selected disabled hidden>Select time of day</option>
+            
+                    <option value="8AM">8AM</option>
+                    <option value="12PM">12PM</option>
+                    <option value="8PM">8PM</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="tracker-items">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Aripiprazole 20 MG t Tablet take 1/2 </label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> Loratadine 10 MG Table take 1</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Gemfibrozil 600 MG Tablet take 1</label><br>
+        </div>
+
+        <div class="intials">
+            <label for="cars">Initials </label>
+            <select name="initials" id="initials">
+                <option value="" selected disabled hidden>Initial here</option>
+                <option value="volvo">AM</option>
+               
+            </select>
+        </div>
+
+        <div class="actions">
+            <button>Submit</button>
+
+        </div>
+    </div>
+</div>
+
+<div class="medsheet-container">
+    <div class="medsheet-header">
+        <div class="medsheet-header-image"></div>
+        <div class="medsheet-header-text"></div>
+    </div>
+    <div class="medsheet-log-times">
+        
+        <div class="med-log-times">
+            <div class="time">8AM</div>
+            <div class="log-date">
+                <div class="dayofmonth">1</div>
+                <div class="dayofmonth">AM</div>
+            </div>
+           
+        </div>
+        <div class="med-log-times">
+            <div class="log-time">12pm</div>
+            <div class="log-signing-date">
+                <div class="dayofmonth">1</div>
+                <div class="dayofmonth">AM</div>
+            </div>
+           
+        </div>
+        <div class="med-log-times">
+            <div class="time">8pm</div>
+            <div class="log-date">
+                <div class="dayofmonth">1</div>
+                <div class="log-initial">AM</div>
+            </div>
+           
+        </div>
+    </div>
+</div>

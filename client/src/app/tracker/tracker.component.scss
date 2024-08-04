@@ -1,0 +1,40 @@
+
+
+.tracker-container{
+    margin-top: 1rem;
+    border: 1px solid;
+    border-color: blueviolet;
+/*max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;*/
+
+}
+
+
+.tracker-container .tracker-header{
+    background-color: blueviolet; ;
+}
+
+.tracker-header-selector{
+    border: 1px solid;
+    border-color: black;
+    display: flex;
+    gap:2rem;
+}
+
+
+
+.medsheet-log-times{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.log-date{
+    display: flex;
+}
+
+
+.med-log-time{
+border: solid 1px 
+}

@@ -30,6 +30,7 @@ import { AuthGuard } from './auth/service/auth.guard';
 import { AuthEffects } from './auth/service/auth.effects';
 import { RouterState, StoreRouterConnectingModule } from '@ngrx/router-store';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { TrackerComponent } from './tracker/tracker.component';
 
 
 
@@ -41,7 +42,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     AboutComponent,
     LessonsComponent,
     AdminComponent,
-    RbacAllowDirective
+    RbacAllowDirective,
+    TrackerComponent
   ],
   imports: [
     BrowserModule,

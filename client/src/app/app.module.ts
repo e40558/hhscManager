@@ -18,10 +18,9 @@ import { MatListModule} from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule} from '@angular/material/button'
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './components/about/about.component';
 import { LessonsComponent } from './lessons/lessons.component';
 import { LessonsService } from './service/lessons.service';
-import { AdminComponent } from './admin/admin.component';
 import { RbacAllowDirective } from './common/rbac-allow.directive';
 import { Router } from '@angular/router';
 import { AuthModule } from './auth/auth.module';
@@ -31,8 +30,7 @@ import { AuthEffects } from './auth/service/auth.effects';
 import { RouterState, StoreRouterConnectingModule } from '@ngrx/router-store';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { TrackerComponent } from './tracker/tracker.component';
-
-
+import { AdminComponent } from './components/admin/admin.component';
 
 
 @NgModule({
@@ -43,7 +41,7 @@ import { TrackerComponent } from './tracker/tracker.component';
     LessonsComponent,
     AdminComponent,
     RbacAllowDirective,
-    TrackerComponent
+    TrackerComponent,
   ],
   imports: [
     BrowserModule,

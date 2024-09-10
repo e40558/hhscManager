@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ConsumersRoutingModule } from './consumers-routing.module';
+import { ConsumersComponent } from './consumers/consumers.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ConsumersComponent
+  ],
   imports: [
     CommonModule,
     ConsumersRoutingModule

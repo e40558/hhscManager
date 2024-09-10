@@ -80,7 +80,7 @@ loadLocation$ = createEffect(
                             
                         )
                     ),catchError((error)=>
-                       of(LocationActions.locationUpdatedFailure({error:error})))
+                       of(LocationActions.locationDeletedFailure({error:error})))
                     ),
                     {dispatch:false}
         

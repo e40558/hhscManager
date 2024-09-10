@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './components/about/about.component';
 import { LessonsComponent } from './lessons/lessons.component';
-import { AdminComponent } from './admin/admin.component';
 import { AuthGuard } from './auth/service/auth.guard';
 import { roleGuard } from './auth/service/role.guard';
 import { TrackerComponent } from './tracker/tracker.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 const routes: Routes = [
   {

@@ -1,3 +1,24 @@
 {
-    "description": "the new user form config"
+    "description": "the new user form config",
+    "controls": {
+        "displayName": {
+            "controlType": "input",
+            "type": "text",
+            "label": "Full Name",
+            "value": ""
+        },
+        "email": {
+            "controlType": "input",
+            "type": "emaiil",
+            "label": "Email",
+            "value": ""
+        },
+        "role": {
+            "controlType": "select",           
+            "label": "User Role",
+            "value": ""
+          
+        }
+
+    }
 }

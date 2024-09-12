@@ -10,7 +10,7 @@
    
       <mat-nav-list (click)="sidenav.close()">
 
-        <a mat-list-item routerLink="lessons">
+        <a mat-list-item      routerLink="lessons">
             <mat-icon>library_books</mat-icon>
             <span>Lessons</span>
         </a>
@@ -26,6 +26,11 @@
             <mat-icon>library_books</mat-icon>
             <span>Locations</span>
         </a>
+        <a mat-list-item routerLink="consumers">
+            <mat-icon>library_books</mat-icon>
+            <span>Consumers</span>
+        </a>
+
 
         <a mat-list-item routerLink="medsheets">
             <mat-icon>library_books</mat-icon>
@@ -81,4 +86,6 @@
   <router-outlet></router-outlet>
 
 
+
+  
 </mat-sidenav-container>

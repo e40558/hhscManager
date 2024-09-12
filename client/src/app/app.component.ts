@@ -9,6 +9,7 @@ import { AppState } from './reducers';
 import { isLoggedIn, isLoggedOut } from './auth/auth.selectors';
 import { login, logout } from './auth/auth.actions';
 import { Router, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,9 @@ import { Router, NavigationStart, NavigationEnd, NavigationCancel, NavigationErr
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-
+ 
+  
+  
 
   loading = true;
   isLoggedIn$: Observable<boolean> = new Observable<boolean>;
@@ -30,11 +33,13 @@ export class AppComponent implements OnInit {
 
   constructor(private authService: AuthService,
     private router: Router,
+    private httpClient:HttpClient,
     private store: Store<AppState>) {
 
   }
 
   ngOnInit() {
+   
     this.router.events.subscribe(event => {
       switch (true) {
         case event instanceof NavigationStart: {
@@ -72,8 +77,7 @@ export class AppComponent implements OnInit {
   }
 
 
-
-
+ 
 
   toggle() {
     if (this.toggleActive == true) {

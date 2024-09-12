@@ -6,11 +6,12 @@ import { AuthGuard } from './auth/service/auth.guard';
 import { roleGuard } from './auth/service/role.guard';
 import { TrackerComponent } from './tracker/tracker.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { DynamicPageComponent } from './dynamic-page/dynamic-page.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: TrackerComponent
+    component: DynamicPageComponent
   },
 
   {
@@ -58,6 +59,8 @@ const routes: Routes = [
 },
 
   { path: 'singleLocation', loadChildren: () => import('./locations/single-location/single-location.module').then(m => m.SingleLocationModule) },
+  { path: 'consumers', loadChildren: () => import('./consumers/consumers-list/consumers-list.module').then(m => m.ConsumersListModule) },
+  { path: 'dynamic-page', loadChildren: () => import('./dynamic-page/dynamic-page.module').then(m => m.DynamicPageModule) },
 
 
 {

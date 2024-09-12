@@ -42,7 +42,8 @@ export class HomeComponent implements OnInit {
 
         this.advancedCourses$ = this.store.pipe(select(selectAdvancedCourses));
 
-        this.promoTotal$ = this.store.pipe(select(selectPromoTotal));
+        this.promoTotal$ = 
+        this.store.pipe(select(selectPromoTotal));
 
   }
 

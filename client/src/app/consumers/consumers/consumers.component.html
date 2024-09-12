@@ -1,1 +1,5 @@
-<p>consumers works!</p>
+
+ <div *ngIf="consumers$ | async as consumers">
+        <hcs-consumers-list [consumers]="consumers">
+        </hcs-consumers-list>
+ </div>

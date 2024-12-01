@@ -11,7 +11,7 @@ import { selectAllLocations } from '../state/locations.selectors';
   templateUrl: './location.component.html',
   styleUrls: ['./location.component.scss']
 })
-export class LocationComponent {
+export class LocationsComponent {
   allLocations$: Observable<Location[]> = new Observable<Location[]>() ;
 
 

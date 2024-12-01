@@ -8,7 +8,7 @@ import { areLocationsLoaded } from "../state/locations.selectors";
 
 
 
-export const LocationResolver: ResolveFn<any> = (
+export const LocationsResolver: ResolveFn<any> = (
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot,
     store: Store<AppState> = inject(Store<AppState>)

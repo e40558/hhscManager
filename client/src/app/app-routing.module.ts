@@ -17,8 +17,12 @@ const routes: Routes = [
   {
     path: 'locations',
     loadChildren: () => import('./locations/locations.module').then(m => m.LocationsModule),
-    
- },
+  },
+
+  {
+    path: 'consumers',
+    loadChildren: () => import('./consumers/consumers.module').then(m => m.ConsumersModule),
+  },
 
  {
   path: 'medsheets',
@@ -58,7 +62,7 @@ const routes: Routes = [
   }
 },
 
-  { path: 'singleLocation', loadChildren: () => import('./locations/single-location/single-location.module').then(m => m.SingleLocationModule) },
+  { path: 'singleLocation', loadChildren: () => import('./locations/detail/single-location.module').then(m => m.SingleLocationModule) },
   { path: 'consumers', loadChildren: () => import('./consumers/consumers-list/consumers-list.module').then(m => m.ConsumersListModule) },
   { path: 'dynamic-page', loadChildren: () => import('./dynamic-page/dynamic-page.module').then(m => m.DynamicPageModule) },
 

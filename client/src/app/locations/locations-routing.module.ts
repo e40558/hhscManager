@@ -1,24 +1,55 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LocationResolver } from './services/location.resolver';
+import { LocationsResolver } from './services/locations.resolver';
+import { SingleLocationComponent } from './detail/single-location.component';
+import { ConsumerDetailComponent } from '../consumers/consumer-details/consumer-detail/consumer-detail.component';
+import { ConsumersComponent } from '../consumers/consumers.component';
 
 const routes: Routes = [
   {
-     path: '', loadChildren: () => import('./location/location.module').then(m => m.LocationModule),
-     
-    resolve: {
-        locations: LocationResolver
+    path: '', loadChildren: () => import('./locations/locations.module').then(m => m.LocationsModule),
+         resolve: {
+        locations: LocationsResolver
     }
   },
 
-  { path: 'editLocation', loadChildren: () => import('../locations/edit-location/edit-location.module').then(m => m.EditLocationModule) },
+  {
+    path:":id",
+    component: SingleLocationComponent,
+   // canActivate: [AuthGuard],
+   // canActivateChild: [AuthGuard],
+   // canDeactivate: [ConfirmExitGuard],
+    children: [
+        {
+          path: "",
+          component: ConsumersComponent,
+          resolve: {
+             // consumers: ConsumersResolver
+          }
+        },
+        {
+            path: "consumers/:id",
+            component: ConsumerDetailComponent,
+            resolve: {
+             //   lesson: LessonDetailResolver
+            }
+        }
+    ],
+    resolve: {
+       // course: CourseResolver
+    }
+},
+
+  { path: 'editLocation/:id', loadChildren: () => import('../locations/edit-location/edit-location.module').then(m => m.EditLocationModule) },
                        
-  { path: 'details/:id', loadChildren: () => import('../locations/single-location/single-location.module').then(m => m.SingleLocationModule) },
-     
+  
   
   
 
 ];
+
+
+
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

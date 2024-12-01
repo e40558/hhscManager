@@ -1,8 +1,8 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Consumer } from '../models/consumer';
 import { AppState } from 'src/app/reducers';
 import { select, Store } from '@ngrx/store';
+import { Consumer } from './models/consumer';
 
 @Component({
   selector: 'app-consumers',

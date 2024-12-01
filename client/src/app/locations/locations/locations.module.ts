@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LocationRoutingModule } from './location-routing.module';
-import { LocationComponent } from './location.component';
+import { LocationsComponent } from './locations.component';
 
 
 import {MatDatepickerModule} from '@angular/material/datepicker';
@@ -25,7 +25,7 @@ import { LocationsTableListModule } from '../locations-table-list/locations-tabl
 
 @NgModule({
   declarations: [
-    LocationComponent
+    LocationsComponent
   ],
   imports: [
     CommonModule,
@@ -38,4 +38,4 @@ import { LocationsTableListModule } from '../locations-table-list/locations-tabl
     
   ]
 })
-export class LocationModule { }
+export class LocationsModule { }
